@@ -1,59 +1,17 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <meta charset="utf-8">
-          <title>Semana Academica</title>
-
-          <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet" type="text/css">
-          <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet" type="text/css">
-          <script src="https://unpkg.com/vue/dist/vue.js"></script>
-          <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
-     </head>
-     <body>
-               <div id="app-2">
-                    <v-toolbar class="green">
-                         <v-toolbar-side-icon></v-toolbar-side-icon>
-
-                         <v-toolbar-title>SC&T</v-toolbar-title>
-
-                         <v-spacer></v-spacer>
-
-                         <v-toolbar-items class="hidden-md-and-down">
-                              <v-toolbar-item ripple>Teste1</v-toolbar-item>
-                              <v-toolbar-item ripple>Teste2</v-toolbar-item>
-                              <v-toolbar-item ripple>Teste3</v-toolbar-item>
-                         </v-toolbar-items>
-                         <v-btn icon dark>
-                              <v-icon>account_circle</v-icon>
-                         </v-btn>
-                         <v-btn icon dark>
-                              <v-icon>favorite</v-icon>
-                         </v-btn>
-                         <v-btn icon dark>
-                              <v-icon>more_vert</v-icon>
-                         </v-btn>
-                    </v-toolbar>
-
-                    <br/><br/>
-
-                    <v-container fluid="fluid">
-                         <v-row>
-                             <v-col offset-xs6>
-                                  <v-progress-circular
-                                      indeterminate
-                                      v-bind:size="30"
-                                      v-bind:width="7"
-                                      class="purple--text"
-                                    />
-                             </v-col>
-                         </v-row>
-                    </v-container>
-               </div>
-
-               <script type="text/javascript">
-                    var app2 = new Vue({
-                         el: '#app-2',
-                    })
-               </script>
-     </body>
+<head>
+	<meta charset="utf-8">
+	<title>Boilerplate</title>
+	<link rel="stylesheet" href="css/lib/iconfont/material-icons.css">
+	<link rel="stylesheet" href="css/lib/vuetify.min.css">
+</head>
+<body>
+	<div id="app"></div>
+	<script src="js/lib/vue.min.js" charset="utf-8"></script>
+	<script src="js/lib/vue-router.min.js" charset="utf-8"></script>
+	<script src="js/lib/httpVueLoader.js" charset="utf-8"></script>
+	<script src="js/lib/vuetify.min.js" charset="utf-8"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+</body>
 </html>
