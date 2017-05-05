@@ -13,8 +13,7 @@ const routes = [
 new Vue({
 	el: '#app',
 	router: new VueRouter({
-		routes: routes,
-		mode: 'history'
+		routes: routes
 	}),
 	render: function(h){
 		return h(app);
