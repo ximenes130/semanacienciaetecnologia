@@ -1,3 +1,17 @@
 # SComp 2017
 
-Código fonte do site do SComp 2017 em https://ximenes130.github.io/semanacienciaetecnologia
+Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
+
+---
+
+### TO-DOs
+- [ ] Sobre
+- [ ] Inscrições
+- [ ] Cronograma
+- [ ] Mapa do Campus
+- [ ] Endereço do Campus + Mapa
+- [ ] Fotos
+     - [ ] Estive no evento
+     - [ ] Melhores momentos
+     - [ ] compartilhavel
+- [ ] Entre em contato
