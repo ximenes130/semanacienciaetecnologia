@@ -10,12 +10,12 @@ const programacao = httpVueLoader('./vue/programacao.vue');
 const routes = [
 	{path: '*', component: notfound},
 	{path: '/', redirect: '/sobre'},
-	{path: '/sobre', component: sobre},
-	{path: '/local', component: local},
-	{path: '/programacao', component: programacao}
+	{path: '/sobre', component: sobre, name: 'Sobre o evento'},
+	{path: '/local', component: local, name: 'Como chegar'},
+	{path: '/programacao', component: programacao, name: 'Programação'}
 ];
 
-new Vue({
+var vueApp = new Vue({
 	el: '#app',
 	router: new VueRouter({
 		routes: routes

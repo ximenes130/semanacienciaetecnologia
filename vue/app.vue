@@ -25,7 +25,7 @@
 					<v-divider light></v-divider>
 
 					<v-list dense>
-						<v-list-item @click="irSobre">
+						<v-list-item @click="goTo('/sobre')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>info</v-icon>
@@ -35,7 +35,7 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="irLocal">
+						<v-list-item @click="goTo('/local')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>directions</v-icon>
@@ -45,7 +45,7 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="irProgramacao">
+						<v-list-item @click="goTo('/programacao')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>schedule</v-icon>
@@ -79,22 +79,15 @@ module.exports = {
 	data(){
 		return {
 			sidebar: true,
-			titulo: 'Sobre o evento'
+			titulo: this.$route.name
 		}
 	},
 	methods: {
-		irSobre(){
-			this.titulo = 'Sobre o evento';
-			this.$router.push('/sobre');
-		},
-		irLocal(){
-			this.titulo = 'Como chegar';
-			this.$router.push('/local');
-		},
-		irProgramacao(){
-			this.titulo = 'Programação';
-			this.$router.push('/programacao');
-		},
+		goTo(url){
+			this.$router.push(url, ()=>{
+				this.titulo = this.$route.name;
+			});
+		}
 	}
 }
 </script>
