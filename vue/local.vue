@@ -6,13 +6,13 @@
 					<v-card horizontal class="mt-3" id="#mapa">
 						<v-card-row img="resources/images/derek-liang-239062.jpg" height="130px"></v-card-row>
 						<v-card-column>
-							<v-card-row height="75px" class="brown darken-2 white--text">
+							<v-card-row height="75px" class="indigo white--text">
 								<v-card-text>
 									<strong>Reservation at Lazy Bear</strong>
 									<div>Feb 23, 7:00pm</div>
 								</v-card-text>
 							</v-card-row>
-							<v-card-row actions class="brown darken-4">
+							<v-card-row actions class="indigo darken-4">
 								<v-btn flat class="white--text">
 									<v-icon left>directions</v-icon>Directions
 								</v-btn>

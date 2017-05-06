@@ -16,7 +16,7 @@
 
 				<v-sidebar v-model="sidebar" fixed>
 
-					<div class="sidebar-header text-xs-center">
+					<div class="text-xs-center">
 						<img src="img/logo.png" class="logo">
 						<div class="sidebar-title white--text">SC&T</div>
 						<br>
@@ -25,13 +25,13 @@
 					<v-divider light></v-divider>
 
 					<v-list dense>
-						<v-list-item @click="goTo('/sobre')">
+						<v-list-item @click="goTo('/')">
 							<v-list-tile>
 								<v-list-tile-avatar>
-									<v-icon>info</v-icon>
+									<v-icon>home</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Sobre o evento</v-list-tile-title>
+									<v-list-tile-title>Início</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
@@ -59,7 +59,7 @@
 				</v-sidebar>
 
 				<!-- Conteúdo das páginas -->
-				<v-content id="conteudo">
+				<v-content class="conteudo">
 					<router-view></router-view>
 				</v-content>
 
@@ -67,7 +67,7 @@
 
 			<!-- Rodapé -->
 
-			<v-footer class="mt-3">
+			<v-footer class="mt-3 grey darken-2">
 				<div class="text-xs-center">&copy; 2017 SC&T</div>
 			</v-footer>
 		</v-app>
@@ -78,7 +78,7 @@
 module.exports = {
 	data(){
 		return {
-			sidebar: true,
+			sidebar: false,
 			titulo: this.$route.name
 		}
 	},
@@ -93,7 +93,7 @@ module.exports = {
 </script>
 
 <style scoped>
-	#conteudo{
+	.conteudo{
 		margin-top: 64px;
 	}
 	.logo{
