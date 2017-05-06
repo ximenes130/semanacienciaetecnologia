@@ -833,14 +833,14 @@ video {
   background: #ff5252 !important;
 }
 .secondary {
-  background-color: #bdbdbd !important;
-  border-color: #bdbdbd !important;
+  background-color: #424242 !important;
+  border-color: #424242 !important;
 }
 .secondary--text {
-  color: #bdbdbd !important;
+  color: #424242 !important;
 }
 .secondary--after:after {
-  background: #bdbdbd !important;
+  background: #424242 !important;
 }
 .info {
   background-color: #42a5f5 !important;
@@ -5781,14 +5781,14 @@ a.list__tile:hover,
   animation-iteration-count: infinite;
 }
 .progress-linear--secondary .progress-linear__bar {
-  background: #dedede;
+  background: #a1a1a1;
 }
 .progress-linear--secondary .progress-linear__bar__determinate {
-  background: #bdbdbd;
+  background: #424242;
 }
 .progress-linear--secondary .progress-linear__bar__indeterminate:before,
 .progress-linear--secondary .progress-linear__bar__indeterminate:after {
-  background: #bdbdbd;
+  background: #424242;
 }
 .progress-linear--success .progress-linear__bar {
   background: #c0e3c2;
@@ -6357,7 +6357,7 @@ a.list__tile:hover,
   color: rgba(255,255,255,0.3);
 }
 .sidebar {
-  background-color: #bdbdbd;
+  background-color: #424242;
   overflow-y: auto;
   padding: 0 0 100px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.6, 1), margin 0.3s cubic-bezier(0.4, 0, 0.6, 1);
@@ -7483,7 +7483,7 @@ table.table tfoot tr {
   margin-top: 0;
 }
 .toast__content {
-  background: #bdbdbd;
+  background: #424242;
   border-radius: 2px;
   color: #fff;
   padding: 1rem 2rem;
@@ -7625,7 +7625,7 @@ table.table tfoot tr {
   }
 }
 .with.left-sidebar main {
-  background: #bdbdbd;
+  background: #424242;
 }
 .with.left-sidebar .sidebar {
   box-shadow: none;

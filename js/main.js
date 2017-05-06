@@ -3,11 +3,16 @@ Vue.use(Vuetify);
 
 const app = httpVueLoader('./vue/app.vue');
 const notfound = httpVueLoader('./vue/404.vue');
-const index = httpVueLoader('./vue/index.vue');
+const sobre = httpVueLoader('./vue/sobre.vue');
+const local = httpVueLoader('./vue/local.vue');
+const programacao = httpVueLoader('./vue/programacao.vue');
 
 const routes = [
 	{path: '*', component: notfound},
-	{path: '/', component: index}
+	{path: '/', redirect: '/sobre'},
+	{path: '/sobre', component: sobre},
+	{path: '/local', component: local},
+	{path: '/programacao', component: programacao}
 ];
 
 new Vue({
