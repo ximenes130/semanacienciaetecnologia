@@ -1,47 +1,29 @@
 <template>
-	<div>
+     <div>
           <v-card class="mt-4">
-            <v-card-row class="green darken-1">
-              <v-card-title>
-                <span class="white--text">Marriot Rewards</span>
-                <v-spacer></v-spacer>
-                <div>
-                  <v-menu id="marriot" bottom left origin="top right">
-                    <v-btn icon="icon" slot="activator" class="white--text">
-                      <v-icon>more_vert</v-icon>
-                    </v-btn>
-                    <v-list>
-                      <v-list-item>
-                        <v-list-tile>
-                          <v-list-tile-title>Never show rewards</v-list-tile-title>
-                        </v-list-tile>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-tile>
-                          <v-list-tile-title>Remove Card</v-list-tile-title>
-                        </v-list-tile>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-tile>
-                          <v-list-tile-title>Send Feedback</v-list-tile-title>
-                        </v-list-tile>
-                      </v-list-item>
-                    </v-list>
-                  </v-menu>
-                </div>
-              </v-card-title>
-            </v-card-row>
-            <v-card-text>
-              <v-card-row height="75px">
-                <v-icon class="mr-5">card_membership</v-icon>
-                <div>
-                  <div>Membership Number</div><strong>113241423</strong>
-                </div>
-              </v-card-row>
-            </v-card-text>
-            <v-card-row actions>
-              <v-btn flat class="green--text darken-1">View Email</v-btn>
-            </v-card-row>
-          </v-card>
-     </template>
+               <v-card-row class="green darken-1">
+                    <v-card-title>
+                         <span class="white--text">Inscrições</span>
+                         <v-spacer></v-spacer>
+                    </v-card-title>
+               </v-card-row>
+               <v-card-row>
+               <script src="https://doity.com.br/js/box_inscricao.js" type="text/javascript"></script>
+               <iframe scrolling="0"
+               id="iframe-inscricao"
+               onload="setIframeHeight(this.id)"
+               style="width: 100%;height: 500px;border: none;"
+               src="https://doity.com.br/teste-301/passo1">
+          </iframe>
+          <p style="text-align:center;
+               color:#666672;
+               font-size:14px;
+               font-family:'Open Sans',Helvetica, Arial, sans-serif;
+               font-weight:bolder;">
+               Caso n&atilde;o consiga fazer a inscri&ccedil;&atilde;o
+               <a target="_blank" href="https://doity.com.br/teste-301">clique aqui </a>
+          </p>
+</v-card-row>
+</v-card>
+</template>
 </div>
