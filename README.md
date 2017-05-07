@@ -9,7 +9,7 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
 - [ ] Inscrições
 - [ ] Cronograma
 - [ ] Mapa do Campus
-- [ ] Endereço do Campus + Mapa
+- [x] Endereço do Campus + Mapa
 - [ ] Fotos
      - [ ] Estive no evento
      - [ ] Melhores momentos
