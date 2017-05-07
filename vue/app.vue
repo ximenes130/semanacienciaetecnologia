@@ -35,16 +35,6 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="scrollTo('#inscricao')">
-							<v-list-tile>
-								<v-list-tile-avatar>
-									<v-icon>assignment_ind</v-icon>
-								</v-list-tile-avatar>
-								<v-list-tile-content>
-									<v-list-tile-title>Inscrições</v-list-tile-title>
-								</v-list-tile-content>
-							</v-list-tile>
-						</v-list-item>
 						<v-list-item @click="scrollTo('#campus-endereco')">
 							<v-list-tile>
 								<v-list-tile-avatar>
@@ -52,6 +42,16 @@
 								</v-list-tile-avatar>
 								<v-list-tile-content>
 									<v-list-tile-title>Endereço</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
+						<v-list-item @click="scrollTo('#inscricao')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>assignment_ind</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Inscrições</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
