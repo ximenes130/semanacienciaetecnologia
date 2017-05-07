@@ -122,9 +122,10 @@ module.exports = {
 		}
 	},
 	methods: {
-		scrollTo(tagId){
-			let elem = document.querySelector(tagId);
-			document.body.scrollTop = elem.offsetTop - 78;
+		scrollTo(selector){
+			$('body').animate({
+				scrollTop: $(selector).offset().top - 78
+			})
 		}
 	}
 }
