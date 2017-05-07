@@ -125,10 +125,13 @@ module.exports = {
 		scrollTo(selector){
 			$('body').animate({
 				scrollTop: $(selector).offset().top - 78
-			})
+			});
+			if(innerWidth < 992){
+				this.sidebar = false;
+			}
 		}
 	}
-}
+};
 </script>
 
 <style scoped>
