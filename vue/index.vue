@@ -5,11 +5,11 @@
 				<v-col xs12 md10 offset-md1>
 					<sobre id="sobre"></sobre>
 					<campus-endereco id="campus-endereco"></campus-endereco>
+					<inscricao id="inscricao"></inscricao>
 					<campus-mapa id="campus-mapa"></campus-mapa>
-					<contato id="contato"></contato>
 					<cronograma id="cronograma"></cronograma>
 					<fotos id="fotos"></fotos>
-					<inscricao id="inscricao"></inscricao>
+					<contato id="contato"></contato>
 				</v-col>
 			</v-row>
 		</v-container>

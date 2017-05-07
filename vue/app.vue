@@ -35,6 +35,16 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
+						<v-list-item @click="scrollTo('#inscricao')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>assignment_ind</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Inscrições</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
 						<v-list-item @click="scrollTo('#campus-endereco')">
 							<v-list-tile>
 								<v-list-tile-avatar>
@@ -55,16 +65,6 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="scrollTo('#contato')">
-							<v-list-tile>
-								<v-list-tile-avatar>
-									<v-icon>contact_phone</v-icon>
-								</v-list-tile-avatar>
-								<v-list-tile-content>
-									<v-list-tile-title>Contato</v-list-tile-title>
-								</v-list-tile-content>
-							</v-list-tile>
-						</v-list-item>
 						<v-list-item @click="scrollTo('#cronograma')">
 							<v-list-tile>
 								<v-list-tile-avatar>
@@ -78,20 +78,20 @@
 						<v-list-item @click="scrollTo('#fotos')">
 							<v-list-tile>
 								<v-list-tile-avatar>
-									<v-icon>photo_album</v-icon>
+									<v-icon>photo_camera</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
 									<v-list-tile-title>Fotos</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="scrollTo('#inscricao')">
+						<v-list-item @click="scrollTo('#contato')">
 							<v-list-tile>
 								<v-list-tile-avatar>
-									<v-icon>assignment_ind</v-icon>
+									<v-icon>contact_phone</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Inscrição</v-list-tile-title>
+									<v-list-tile-title>Contato</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
