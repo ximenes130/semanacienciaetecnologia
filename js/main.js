@@ -13,13 +13,13 @@ const programacao = httpVueLoader('./vue/programacao.vue');
 
 // Custom components
 
-const about = httpVueLoader('./vue/sections/about.vue');
-//   const subscription = '<div>subscription</div>';
-//   const schedule = '<div>schedule</div>';
-//   const campus-map = '<div>bcampus-map lahhh</div>';
-//   const campus-addres = '<div>campus-addres</div>';
-//   const fotos = '<div>fotos</div>';
-//   const contact = '<div>contact</div>';
+const sobre = httpVueLoader('./vue/sections/sobre.vue');
+const campusEndereco =  httpVueLoader('./vue/sections/campusEndereco.vue');
+const campusMapa =  httpVueLoader('./vue/sections/campusMapa.vue');
+const contato =  httpVueLoader('./vue/sections/contato.vue');
+const cronograma = httpVueLoader('./vue/sections/cronograma.vue');
+const fotos =  httpVueLoader('./vue/sections/fotos.vue');
+const inscricao = httpVueLoader('./vue/sections/inscricao.vue');
 
 // Code
 
@@ -30,9 +30,19 @@ const routes = [
 	{path: '/programacao', component: programacao, name: 'Programação'}
 ];
 
+
 // Registro de componentes
 
-Vue.component('about', about);
+Vue.component('sobre', sobre);
+Vue.component('campus-endereco',campusEndereco);
+Vue.component('campus-mapa',campusMapa);
+Vue.component('contato',contato);
+Vue.component('cronograma',cronograma);
+Vue.component('fotos',fotos);
+Vue.component('inscricao',inscricao);
+
+
+//
 
 var vueApp = new Vue({
 	el: '#app',
