@@ -7,7 +7,7 @@
 			<header>
 				<v-toolbar fixed>
 					<v-toolbar-side-icon class="hidden-lg-and-up" @click.native.stop="sidebar = !sidebar"></v-toolbar-side-icon>
-					<v-toolbar-title>{{titulo}}</v-toolbar-title>
+					<v-toolbar-title>Semana da ciência e Tecnologia 2017</v-toolbar-title>
 				</v-toolbar>
 			</header>
 			<main>
@@ -25,42 +25,82 @@
 					<v-divider light></v-divider>
 
 					<v-list dense>
-						<v-list-item @click="goTo('/')">
+						<v-list-item @click="scrollTo('#sobre')">
 							<v-list-tile>
 								<v-list-tile-avatar>
-									<v-icon>home</v-icon>
+									<v-icon>info</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Início</v-list-tile-title>
+									<v-list-tile-title>Sobre</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="goTo('/local')">
+						<v-list-item @click="scrollTo('#campus-endereco')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>directions</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Como chegar</v-list-tile-title>
+									<v-list-tile-title>Endereço</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="goTo('/programacao')">
+						<v-list-item @click="scrollTo('#campus-mapa')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>location_on</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Mapa</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
+						<v-list-item @click="scrollTo('#contato')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>contact_phone</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Contato</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
+						<v-list-item @click="scrollTo('#cronograma')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>schedule</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Programação</v-list-tile-title>
+									<v-list-tile-title>Cronograma</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
+						<v-list-item @click="scrollTo('#fotos')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>photo_album</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Fotos</v-list-tile-title>
+								</v-list-tile-content>
+							</v-list-tile>
+						</v-list-item>
+						<v-list-item @click="scrollTo('#inscricao')">
+							<v-list-tile>
+								<v-list-tile-avatar>
+									<v-icon>assignment_ind</v-icon>
+								</v-list-tile-avatar>
+								<v-list-tile-content>
+									<v-list-tile-title>Inscrição</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
 					</v-list>
 				</v-sidebar>
 
-				<!-- Conteúdo das páginas -->
+				<!-- Index.vue -->
 				<v-content class="conteudo">
-					<router-view></router-view>
+					<index></index>
 				</v-content>
 
 			</main>
@@ -78,15 +118,14 @@
 module.exports = {
 	data(){
 		return {
-			sidebar: false,
-			titulo: this.$route.name
+			sidebar: false
 		}
 	},
 	methods: {
-		goTo(url){
-			this.$router.push(url, ()=>{
-				this.titulo = this.$route.name;
-			});
+		scrollTo(tagId){
+			let elem = document.querySelector(tagId);
+			document.body.scrollTop = elem.offsetTop - 78;
+			this.sidebar = false;
 		}
 	}
 }
