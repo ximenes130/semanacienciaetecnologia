@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<v-container fluid>
-			<v-row>
+			<v-row id="coluna">
 				<v-col xs12 md10 offset-md1>
 					<sobre id="sobre"></sobre>
 					<campus-endereco id="campus-endereco"></campus-endereco>
@@ -15,3 +15,9 @@
 		</v-container>
 	</div>
 </template>
+
+<style>
+	#coluna{
+		max-width: 1065px;
+	}
+</style>
