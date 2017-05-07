@@ -125,7 +125,6 @@ module.exports = {
 		scrollTo(tagId){
 			let elem = document.querySelector(tagId);
 			document.body.scrollTop = elem.offsetTop - 78;
-			this.sidebar = false;
 		}
 	}
 }
