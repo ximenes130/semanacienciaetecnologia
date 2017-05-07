@@ -2,10 +2,10 @@
 	<div>
 		<v-card horizontal class="mt-4">
 			<v-card-column class="amber darken-1 white--text">
-				<v-card-row height="75px" class="brown white--text">
+				<v-card-row height="100px" class="brown white--text">
 					<v-card-text>
-						<strong>Inscrições abertas</strong>
-						<div>blablabla</div>
+						<strong>Inscrições fechadas</strong>
+						<div>Atualmente o site está em versão de testes, portanto toda inscrição realizada não será valida</div>
 					</v-card-text>
 				</v-card-row>
 				<v-card-row actions class="brown darken-2">
@@ -28,7 +28,7 @@
 					</v-dialog>
 				</v-card-row>
 			</v-card-column>
-			<v-card-row img="img/inscreva-se.jpg" height="125px"></v-card-row>
+			<v-card-row img="img/inscreva-se.jpg" height="175px"></v-card-row>
 		</v-card>
 	</div>
 </template>
