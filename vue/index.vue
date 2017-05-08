@@ -7,7 +7,7 @@
 					<campus-endereco id="campus-endereco"></campus-endereco>
 					<inscricao id="inscricao"></inscricao>
 					<campus-mapa id="campus-mapa"></campus-mapa>
-					<cronograma id="cronograma"></cronograma>
+					<programacao id="programacao"></programacao>
 					<fotos id="fotos"></fotos>
 					<contato id="contato"></contato>
 				</v-col>

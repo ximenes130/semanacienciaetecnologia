@@ -8,7 +8,7 @@ const sobre = httpVueLoader('./vue/sections/sobre.vue');
 const campusEndereco =  httpVueLoader('./vue/sections/campusEndereco.vue');
 const campusMapa =  httpVueLoader('./vue/sections/campusMapa.vue');
 const contato =  httpVueLoader('./vue/sections/contato.vue');
-const cronograma = httpVueLoader('./vue/sections/cronograma.vue');
+const programacao = httpVueLoader('./vue/sections/programacao.vue');
 const fotos =  httpVueLoader('./vue/sections/fotos.vue');
 const inscricao = httpVueLoader('./vue/sections/inscricao.vue');
 
@@ -19,7 +19,7 @@ Vue.component('sobre', sobre);
 Vue.component('campus-endereco',campusEndereco);
 Vue.component('campus-mapa',campusMapa);
 Vue.component('contato',contato);
-Vue.component('cronograma',cronograma);
+Vue.component('programacao',programacao);
 Vue.component('fotos',fotos);
 Vue.component('inscricao',inscricao);
 

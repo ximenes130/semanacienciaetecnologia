@@ -71,7 +71,7 @@
 									<v-icon>schedule</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Cronograma</v-list-tile-title>
+									<v-list-tile-title>Progamação</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
