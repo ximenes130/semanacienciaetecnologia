@@ -7,7 +7,7 @@
 			<header>
 				<v-toolbar fixed>
 					<v-toolbar-side-icon class="hidden-lg-and-up" @click.native.stop="sidebar = !sidebar"></v-toolbar-side-icon>
-					<v-toolbar-title>Semana da ciência e Tecnologia 2017</v-toolbar-title>
+					<v-toolbar-title>Semana Ciência e Tecnologia 2017</v-toolbar-title>
 				</v-toolbar>
 			</header>
 			<main>
@@ -65,7 +65,7 @@
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
-						<v-list-item @click="scrollTo('#cronograma')">
+						<v-list-item @click="scrollTo('#programacao')">
 							<v-list-tile>
 								<v-list-tile-avatar>
 									<v-icon>schedule</v-icon>
