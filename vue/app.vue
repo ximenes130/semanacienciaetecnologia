@@ -123,7 +123,7 @@ module.exports = {
 	},
 	methods: {
 		scrollTo(selector){
-			$('body').animate({
+			$('html, body').animate({
 				scrollTop: $(selector).offset().top - 78
 			});
 			if(innerWidth < 992){
