@@ -26,7 +26,7 @@
 
 					<v-list dense>
 						<v-list-item @click="scrollTo('#sobre')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>info</v-icon>
 								</v-list-tile-avatar>
@@ -36,7 +36,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#campus-endereco')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>directions</v-icon>
 								</v-list-tile-avatar>
@@ -46,7 +46,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#inscricao')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>assignment_ind</v-icon>
 								</v-list-tile-avatar>
@@ -56,7 +56,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#campus-mapa')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>location_on</v-icon>
 								</v-list-tile-avatar>
@@ -66,7 +66,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#programacao')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>schedule</v-icon>
 								</v-list-tile-avatar>
@@ -76,7 +76,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#fotos')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>photo_camera</v-icon>
 								</v-list-tile-avatar>
@@ -86,7 +86,7 @@
 							</v-list-tile>
 						</v-list-item>
 						<v-list-item @click="scrollTo('#contato')">
-							<v-list-tile>
+							<v-list-tile ripple>
 								<v-list-tile-avatar>
 									<v-icon>contact_phone</v-icon>
 								</v-list-tile-avatar>
