@@ -25,7 +25,7 @@
 }
 #parallax-bg{
     width: 100%;
-    height: 589px;
+    height: 400px;
     content: '';
     position: absolute;
     z-index: 1;
