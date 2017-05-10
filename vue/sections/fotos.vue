@@ -7,7 +7,7 @@
 				</v-card-title>
 			</v-card-row>
 			<v-carousel>
-				<v-carousel-item v-for="foto in fotos" :src="foto"></v-carousel-item>
+				<v-carousel-item v-for="(foto, index) in fotos" :src="foto" :key="index"></v-carousel-item>
 			</v-carousel>
 		</v-card>
 	</div>
