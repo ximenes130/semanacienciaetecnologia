@@ -2,13 +2,13 @@
 	<div>
 		<v-card horizontal class="mt-4">
 			<v-card-column class="amber darken-1 white--text">
-				<v-card-row height="100px" class="brown white--text">
+				<v-card-row height="100px" class="teal white--text">
 					<v-card-text>
 						<strong>Inscrições fechadas</strong>
 						<div>Atualmente o site está em versão de testes, portanto toda inscrição realizada não será valida</div>
 					</v-card-text>
 				</v-card-row>
-				<v-card-row actions class="brown darken-2">
+				<v-card-row actions class="teal darken-2">
 					<v-spacer></v-spacer>
 					<v-dialog  fullscreen transition="v-dialog-bottom-transition" :overlay="false" v-model="dinscricao">
 						<v-btn flat class="white--text" slot="activator">

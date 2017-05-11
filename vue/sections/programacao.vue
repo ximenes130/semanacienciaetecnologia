@@ -2,7 +2,7 @@
 	<div>
 		<v-card horizontal class="mt-4">
 			<v-card-column>
-				<v-card-row actions class="brown darken-2">
+				<v-card-row actions class="teal darken-2">
 					<v-card-title>
 						<span class="white--text">Programação</span>
 						<v-spacer></v-spacer>
@@ -14,7 +14,7 @@
 						</v-dialog>
 					</v-card-title>
 				</v-card-row>
-				<v-card-row class="brown darken-4 white--text">
+				<v-card-row class="teal darken-4 white--text">
 					<v-card-row class="hidden-sm-and-down">
 						<v-date-picker v-model="data" :days="days" :months="months" :date-format="format" :no-title="true"></v-date-picker>
 					</v-card-row>

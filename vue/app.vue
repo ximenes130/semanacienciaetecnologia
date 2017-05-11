@@ -7,7 +7,7 @@
 			<header>
 				<v-toolbar fixed>
 					<v-toolbar-side-icon class="hidden-lg-and-up" @click.native.stop="sidebar = !sidebar"></v-toolbar-side-icon>
-					<v-toolbar-title>Semana Ciência e Tecnologia 2017</v-toolbar-title>
+					<v-toolbar-title>Semana de Ciência e Tecnologia 2017</v-toolbar-title>
 				</v-toolbar>
 			</header>
 			<main>
@@ -17,7 +17,8 @@
 				<v-sidebar v-model="sidebar" fixed>
 
 					<div class="text-xs-center">
-						<img src="img/logo.png" class="logo">
+						<br>
+						<img src="img/logo-small.svg" class="logo">
 						<div class="sidebar-title white--text">SC&T</div>
 						<br>
 					</div>
@@ -140,7 +141,6 @@ module.exports = {
 	}
 	.logo{
 		width: 100px;
-		height: 100px;
 	}
 	.sidebar-title {
 		font-size: 20px;

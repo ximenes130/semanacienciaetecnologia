@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<v-card class="mt-4">
-			<v-card-row class="blue-grey darken-1">
+			<v-card-row class="teal darken-1">
 				<v-card-title>
 					<span class="white--text">Contato</span>
 				</v-card-title>
 			</v-card-row>
-			<v-card-text class="blue-grey darken-3 white--text">
+			<v-card-text class="teal darken-3 white--text">
 				<v-list>
 					<v-list-item @click="location.href = 'tel:+5561986448736'">
 						<v-list-tile>
