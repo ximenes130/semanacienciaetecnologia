@@ -8,7 +8,7 @@
 			</v-card-row>
 			<v-card-text class="teal darken-3 white--text">
 				<v-list>
-					<v-list-item @click="location.href = 'tel:+5561986448736'">
+					<v-list-item @click="openUrl('tel:+5561986448736')">
 						<v-list-tile>
 							<v-list-tile-action>
 								<v-icon class="white--text">phone</v-icon>
@@ -18,7 +18,7 @@
 							</v-list-tile-content>
 						</v-list-tile>
 					</v-list-item>
-					<v-list-item @click="location.href = 'mailto:ifb.edu.br'">
+					<v-list-item @click="openUrl('mailto:ifb.edu.br')">
 						<v-list-tile>
 							<v-list-tile-action>
 								<v-icon class="white--text">mail</v-icon>
@@ -28,7 +28,7 @@
 							</v-list-tile-content>
 						</v-list-tile>
 					</v-list-item>
-					<v-list-item @click="window.open('http://ifb.edu.br', '_blank')">
+					<v-list-item @click="openUrl('http://ifb.edu.br')">
 						<v-list-tile>
 							<v-list-tile-action>
 								<v-icon class="white--text">language</v-icon>
@@ -43,3 +43,13 @@
 		</v-card>
 	</div>
 </template>
+
+<script>
+	module.exports = {
+		methods: {
+			openUrl(url){
+				window.open(url, '_blank');
+			}
+		}
+	}
+</script>
