@@ -6,7 +6,7 @@
 					<span class="white--text">Mapa do campus</span>
 				</v-card-title>
 			</v-card-row>
-			<v-card-row img="img/sobre-bg.jpg">
+			<v-card-row>
 				<v-spacer></v-spacer>
 				<img src="img/planta.png" class="mapa-img">
 				<v-spacer></v-spacer>
