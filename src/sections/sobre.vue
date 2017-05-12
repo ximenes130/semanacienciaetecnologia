@@ -6,13 +6,9 @@
 					<span class="white--text">Sobre o evento</span>
 				</v-card-title>
 			</v-card-row>
-			<img src="img/logo.svg" class="logo">
-			<v-parallax src="img/sobre-bg.jpg" height="263"> </v-parallax>
-		<!--	<v-card-row img="img/sobre-bg.jpg">
-				<v-spacer></v-spacer>
+			<v-parallax src="img/sobre-bg.jpg" height="264">
 				<img src="img/logo.svg" class="logo">
-				<v-spacer></v-spacer>
-			</v-card-row> -->
+			</v-parallax>
 			<v-card-text class="teal darken-3 white--text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae posuere sem. Maecenas ut lobortis felis. Ut rutrum condimentum turpis, a consectetur risus hendrerit et.</p>
 			</v-card-text>
@@ -22,10 +18,12 @@
 
 <style scoped>
 	.logo{
-		position: absolute;
-		z-index: 2;
 		width: 500px;
-		margin: 20px;
 		max-width: calc(100% - 40px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
 	}
 </style>
