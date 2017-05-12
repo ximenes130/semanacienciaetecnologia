@@ -1,0 +1,31 @@
+{
+  "name": "site",
+  "description": "A Vue.js project",
+  "author": "Samuel Novaes Sena <samuel.novaes.96@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot --port=8082 --host=0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "jquery": "*",
+    "vue": "*",
+    "vue-router": "*",
+    "vue-server-renderer": "*",
+    "vuex": "*",
+    "vuex-router-sync": "*",
+    "buble": "*",
+    "buble-loader": "*",
+    "cross-env": "*",
+    "css-loader": "*",
+    "file-loader": "*",
+    "style-loader": "*",
+    "stylus": "*",
+    "stylus-loader": "*",
+    "vue-loader": "*",
+    "vue-template-compiler": "*",
+    "vuetify": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}
