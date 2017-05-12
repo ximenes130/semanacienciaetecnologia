@@ -16,7 +16,7 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
      - [ ] compartilhavel
 - [ ] Entre em contato
 
-### Comandos
+### Comandos (Node.js instalado)
 
 #### Clonar repositórios e instalar dependências
 
