@@ -139,6 +139,10 @@
 <style lang="stylus">
 	@import '../node_modules/vuetify/src/stylus/settings/_colors'
 
+	p{
+		font-size: 16px;
+		text-align: justify;
+	}
 	.conteudo{
 		margin-top: 64px
 	}
