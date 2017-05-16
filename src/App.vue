@@ -62,7 +62,7 @@
 									<v-icon>location_on</v-icon>
 								</v-list-tile-avatar>
 								<v-list-tile-content>
-									<v-list-tile-title>Mapa</v-list-tile-title>
+									<v-list-tile-title>Mapa do Campus</v-list-tile-title>
 								</v-list-tile-content>
 							</v-list-tile>
 						</v-list-item>
