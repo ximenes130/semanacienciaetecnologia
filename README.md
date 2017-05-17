@@ -42,8 +42,6 @@ git commit -m "Descrição"
 git push origin master
 ```
 
-
-
 ## Utilizando Docker
 
 #### Obtenha a imagem base NodeJS para Docker:
@@ -51,7 +49,7 @@ git push origin master
 	docker pull node
 ```
 
-#### Para contruir e atualizar a imagem da aplicação:
+#### Para construir e atualizar a imagem da aplicação:
 ```
 	sudo docker build -t sctnode:v0.1 .
 ```
