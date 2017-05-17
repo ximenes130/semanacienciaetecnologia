@@ -44,7 +44,7 @@
 								<img src="img/social/facebook.png">
 							</v-list-tile-avatar>
 							<v-list-tile-content>
-								<v-list-tile-title class="white--text">Facebook</v-list-tile-title>
+								<v-list-tile-title class="white--text">facebook.com/semanacienciaetecnologia</v-list-tile-title>
 							</v-list-tile-content>
 						</v-list-tile>
 					</v-list-item>
@@ -54,7 +54,7 @@
 								<img src="img/social/twitter.png">
 							</v-list-tile-avatar>
 							<v-list-tile-content>
-								<v-list-tile-title class="white--text">Twitter</v-list-tile-title>
+								<v-list-tile-title class="white--text">twitter.com/sctifb</v-list-tile-title>
 							</v-list-tile-content>
 						</v-list-tile>
 					</v-list-item>
