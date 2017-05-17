@@ -6,8 +6,8 @@
 					<span class="white--text">Sobre o evento</span>
 				</v-card-title>
 			</v-card-row>
-			<v-parallax src="img/sobre-bg.jpg" height="264">
-				<img src="img/logo.svg" class="logo">
+			<v-parallax src="img/cards/sobre-bg.jpg" height="264">
+				<img src="img/logo/logo.svg" class="logo">
 			</v-parallax>
 			<v-card-text class="teal darken-3 white--text">
 				<p><strong>Nos dias 12 e 13 de junho</strong>, o  Instituto Federal de

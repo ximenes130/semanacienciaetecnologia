@@ -8,7 +8,7 @@
 			</v-card-row>
 			<v-card-row>
 				<v-spacer></v-spacer>
-				<img src="img/planta.png" class="mapa-img">
+				<img src="img/cards/planta.png" class="mapa-img">
 				<v-spacer></v-spacer>
 			</v-card-row>
 			<v-card-row class="indigo">
@@ -20,9 +20,9 @@
 				<v-list>
 					<v-list-item>
 						<v-list-tile>
-							<v-list-tile-action>
+							<v-list-tile-avatar>
 								<v-icon class="green--text">fiber_manual_record</v-icon>
-							</v-list-tile-action>
+							</v-list-tile-avatar>
 							<v-list-tile-content>
 								<v-list-tile-title class="white--text">Bla Bla Bla</v-list-tile-title>
 							</v-list-tile-content>
@@ -30,9 +30,9 @@
 					</v-list-item>
 					<v-list-item>
 						<v-list-tile>
-							<v-list-tile-action>
+							<v-list-tile-avatar>
 								<v-icon class="yellow--text">fiber_manual_record</v-icon>
-							</v-list-tile-action>
+							</v-list-tile-avatar>
 							<v-list-tile-content>
 								<v-list-tile-title class="white--text">Bla Bla Bla</v-list-tile-title>
 							</v-list-tile-content>
@@ -40,9 +40,9 @@
 					</v-list-item>
 					<v-list-item>
 						<v-list-tile>
-							<v-list-tile-action>
+							<v-list-tile-avatar>
 								<v-icon class="red--text">fiber_manual_record</v-icon>
-							</v-list-tile-action>
+							</v-list-tile-avatar>
 							<v-list-tile-content>
 								<v-list-tile-title class="white--text">Bla Bla Bla</v-list-tile-title>
 							</v-list-tile-content>
