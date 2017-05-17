@@ -1,10 +1,10 @@
 {
-  "name": "site",
-  "description": "A Vue.js project",
+  "name": "SCeT",
+  "description": "Site do Evento SCeT",
   "author": "Samuel Novaes Sena <samuel.novaes.96@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot --port=8082 --host=0.0.0.0",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot --port=8082 --host=0.0.0.0 --public=200.130.152.123",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {

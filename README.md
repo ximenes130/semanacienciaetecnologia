@@ -15,8 +15,9 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
      - [ ] Melhores momentos
      - [ ] compartilhavel
 - [ ] Entre em contato
+- [ ] Criação do "npm start Script" para Deploy
 
-### Comandos (Node.js instalado)
+### Como rodar (Node.js instalado)
 
 #### Clonar repositórios e instalar dependências
 
@@ -39,4 +40,23 @@ npm run build
 git add .
 git commit -m "Descrição"
 git push origin master
+```
+
+
+
+## Utilizando Docker
+
+#### Obtenha a imagem base NodeJS para Docker:
+```
+	docker pull node
+```
+
+#### Para contruir e atualizar a imagem da aplicação:
+```
+	sudo docker build -t sctnode:v0.1 .
+```
+#### Para Iniciar o container
+
+```
+	sudo docker run -d --name sctcontainer -p 8082:8082 sctnode:v0.1
 ```
