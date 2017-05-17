@@ -15,6 +15,7 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
      - [ ] Melhores momentos
      - [ ] compartilhavel
 - [ ] Entre em contato
+- [ ] Criação do "npm start Script" para Deploy
 
 ### Como rodar (Node.js instalado)
 
