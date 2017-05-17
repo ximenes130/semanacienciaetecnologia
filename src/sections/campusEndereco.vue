@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<v-card horizontal class="mt-4">
-			<v-card-row img="img/mapa.png" height="130px"></v-card-row>
+			<v-card-row img="img/cards/mapa.png" height="130px"></v-card-row>
 			<v-card-column>
 				<v-card-row height="75px" class="indigo white--text">
 					<v-card-text>

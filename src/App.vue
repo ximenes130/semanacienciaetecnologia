@@ -18,7 +18,7 @@
 
 					<div class="text-xs-center">
 						<br>
-						<img src="img/logo-small.svg" class="logo">
+						<img src="img/logo/logo-small.svg" class="logo">
 						<div class="sidebar-title white--text">SC&T</div>
 						<br>
 					</div>
