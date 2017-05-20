@@ -38,7 +38,11 @@
 
 <style scoped>
 .mapa-img{
-	width: 100%;
+	max-width: 100%;
+	max-height: 500px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
 
