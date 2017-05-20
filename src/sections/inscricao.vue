@@ -22,7 +22,7 @@
 									</v-btn>
 									<v-toolbar-title>Settings</v-toolbar-title>
 								</v-toolbar>
-								<iframe id="iframe-inscricao" src="https://doity.com.br/teste-301/passo1"></iframe>
+								<iframe id="iframe-inscricao" src="https://doity.com.br/semana-de-ciencia-e-tecnologia-2/passo1"></iframe>
 							</v-card-row>
 						</v-card>
 					</v-dialog>
