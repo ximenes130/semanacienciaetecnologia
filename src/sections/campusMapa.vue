@@ -41,8 +41,8 @@
 	max-width: 100%;
 	max-height: 500px;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 </style>
 
@@ -51,14 +51,32 @@ export default {
 	data(){
 		return {
 			mapas: [
-				{titulo:'Mapa do campus',      		  imagem:'img/mapas/Mapa teste.png'},
-				{titulo:'Salas de aula - Terreo',          imagem:'img/mapas/Mapa teste.png'},
-				{titulo:'Salas de aula - 1º Andar',      imagem:'img/mapas/Mapa teste.png'}
+				{
+					titulo:'Mapa do campus',
+					imagem:'img/mapas/Mapa teste.png'
+				},
+				{
+					titulo:'Salas de aula - Terreo',
+					imagem:'img/mapas/Mapa teste.png'
+				},
+				{
+					titulo:'Salas de aula - 1º Andar',
+					imagem:'img/mapas/Mapa teste.png'
+				}
 			],
 			legendas: [
-				{texto:'teste 1',				cor:'green'},
-				{texto:'teste 2',				cor:'yellow'},
-				{texto:'teste 3',				cor:'red'}
+				{
+					texto:'teste 1',
+					cor:'green'
+				},
+				{
+					texto:'teste 2',
+					cor:'yellow'
+				},
+				{
+					texto:'teste 3',
+					cor:'red'
+				}
 			]
 		}
 	}
