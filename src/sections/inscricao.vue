@@ -3,8 +3,8 @@
 		<v-card-column class="amber darken-1 white--text">
 			<v-card-row height="100px" class="teal white--text">
 				<v-card-text>
-					<strong>Inscrições fechadas</strong>
-					<div>Atualmente o site está em versão de testes, portanto toda inscrição realizada não será valida</div>
+					<strong>Inscrições Abertas</strong>
+					<div>Aproveite e se inscreva-se agora para garantir seu certificado</div>
 				</v-card-text>
 			</v-card-row>
 			<v-card-row actions class="teal darken-2">
