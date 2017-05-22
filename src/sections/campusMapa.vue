@@ -7,9 +7,9 @@
 		</v-card-row>
 		<v-card-row>
 			<v-spacer ></v-spacer>
-			<v-expansion-panel>
-				<v-expansion-panel-content class="indigo white--text" v-for="(mapa,index) in mapas" :key="index">
-					<div slot="header" class="white--text"> {{mapa.titulo}}</div>
+			<v-expansion-panel class="elevation-0">
+				<v-expansion-panel-content class="indigo white--text elevation-0" v-for="(mapa,index) in mapas" :key="index">
+					<div slot="header" class="white--text elevation-0"> {{mapa.titulo}}</div>
 					<v-card>
 						<img :src="mapa.imagem"  class="mapa-img">
 					</v-card>
