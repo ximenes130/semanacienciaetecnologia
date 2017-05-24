@@ -139,9 +139,5 @@
 </script>
 
 <style lang="stylus">
-	.card__text {
-		font-size: 16px;
-		text-align: justify;
-	}
 	@import '../node_modules/vuetify/src/stylus/main'
 </style>
