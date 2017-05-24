@@ -15,7 +15,7 @@
 					</v-btn>
 					<v-card>
 						<v-card-row>
-						<v-toolbar class="teal darken-2">
+							<v-toolbar class="teal darken-2">
 								<v-btn icon="icon" @click.native="dcalendar = false" light>
 									<v-icon>close</v-icon>
 								</v-btn>

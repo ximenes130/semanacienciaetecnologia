@@ -10,7 +10,7 @@
 			</v-card-row>
 			<v-card-row actions class="indigo darken-2">
 				<v-btn flat class="white--text" @click.native="openUrl('https://www.google.com.br/maps/place/Instituto+Federal+de+Bras%C3%ADlia+Campus+Taguatinga/@-15.7936003,-48.1132566,14.58z/data=!4m5!3m4!1s0x0:0x63a91cbeaf63f89e!8m2!3d-15.7942254!4d-48.1021088');">
-				<v-icon left light>directions</v-icon> Ver no mapa
+					<v-icon left light>directions</v-icon> Ver no mapa
 				</v-btn>
 			</v-card-row>
 		</v-card-column>

@@ -9,7 +9,7 @@
 			<img src="img/logo/logo.svg" class="logo">
 		</v-parallax>
 		<v-card-text class="teal darken-3 white--text">
-			<p><strong>Nos dias 12 e 13 de junho</strong>, o  Instituto Federal de
+				<p><strong>Nos dias 12 e 13 de junho</strong>, o  Instituto Federal de
 				Brasília (IFB) <em>campus</em> Taguatinga sediará a I Semana de
 				Ciência e Tecnologia (SC&T). Nessa oportunidade,  estudantes,
 				professores e pesquisadores discutirão  ideias sobres diversos temas
