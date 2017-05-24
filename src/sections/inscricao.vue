@@ -1,7 +1,7 @@
 <template>
 	<v-card horizontal class="mt-4">
 		<v-card-column class="amber darken-1 white--text">
-			<v-card-row height="100px" class="teal white--text">
+			<v-card-row class="teal white--text">
 				<v-card-text>
 					<strong>Inscrições Abertas</strong>
 					<div>Aproveite e se inscreva-se agora para garantir seu certificado</div>
