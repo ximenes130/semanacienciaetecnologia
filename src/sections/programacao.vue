@@ -1,50 +1,130 @@
 <template>
-	<v-card horizontal class="mt-4">
-		<v-card-column class="amber darken-1 white--text">
-			<v-card-row class="teal white--text">
-				<v-card-text>
-					<strong>Programação</strong>
-					<div>Veja o cronograma das palestras e oficinas do evento</div>
-				</v-card-text>
-			</v-card-row>
-			<v-card-row actions class="teal darken-2">
-				<v-spacer></v-spacer>
-				<v-dialog  fullscreen transition="v-dialog-bottom-transition" :overlay="false" v-model="dcalendar">
-					<v-btn flat class="white--text" slot="activator">
-						<v-icon left light>schedule</v-icon>Ver programação
-					</v-btn>
-					<v-card>
-						<v-card-row>
-							<v-toolbar class="teal darken-2">
-								<v-btn icon="icon" @click.native="dcalendar = false" light>
-									<v-icon>close</v-icon>
-								</v-btn>
-								<v-toolbar-title>Programação</v-toolbar-title>
-							</v-toolbar>
-							<iframe id="iframe-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=WEEK&height=600&wkst=1&hl=pt_BR&bgcolor=%23339999&src=2mo6dkn8pco11p1hlf95534kso%40group.calendar.google.com&color=%23853104&ctz=America%2FSao_Paulo&dates=20170612/20170613" scrolling="no"></iframe>
-						</v-card-row>
+	<v-card class="mt-4">
+		<v-card-row class="indigo darken-3">
+			<v-card-title>
+				<span class="white--text">Mapa do campus</span>
+			</v-card-title>
+		</v-card-row>
+
+		<!-- Programação -->
+
+		<v-card-row>
+			<v-spacer ></v-spacer>
+			<v-expansion-panel class="elevation-0">
+				<v-expansion-panel-content  class="indigo elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
+					<div slot="header" class="white--text "> {{dia.titulo}}</div>
+					<v-card v-for="(horario,b) in dia.horarios" :key="b">
+						<v-card-text :class="((b%2 == 0) ? 'indigo lighten-2 ' : 'indigo lighten-1')+' text-xs-center black--text'">
+							<div>{{horario.titulo}}</div>
+							<v-layout row-sm column child-flex-sm>
+								<v-card class="transparent" v-for="(evento,c) in horario.eventos" :key="c">
+									<v-card-text :class="evento.cor + ' ma-1'">{{evento.titulo}}</v-card-text>
+								</v-card>
+							</v-layout>
+						</v-card-text>
 					</v-card>
-				</v-dialog>
-			</v-card-row>
-		</v-card-column>
-		<v-card-row img="img/cards/calendario.jpg" height="175px"></v-card-row>
+				</v-expansion-panel-content>
+			</v-expansion-panel>
+			<v-spacer></v-spacer>
+		</v-card-row>
+
+		<!-- Legendas -->
+
+		<v-card-text class="indigo darken-3 white--text">
+			<v-list>
+				<v-list-item v-for="(legenda,index) in legendas" :key="index">
+					<v-list-tile>
+						<v-list-tile-avatar>
+							<v-icon :class="legenda.cor + '--text'">fiber_manual_record</v-icon>
+						</v-list-tile-avatar>
+						<v-list-tile-content>
+							<v-list-tile-title class="white--text">{{legenda.texto}}</v-list-tile-title>
+						</v-list-tile-content>
+					</v-list-tile>
+				</v-list-item>
+			</v-list>
+		</v-card-text>
 	</v-card>
 </template>
 
-<script>
-	export default {
-		data(){
-			return {
-				dcalendar: false
-			}
-		}
-	};
-</script>
-
-<style>
-	#iframe-calendar {
-		width: 100%;
-		height: calc(100vh - 56px);
-		border: none;
-	}
+<style scoped>
+.mapa-img{
+	max-width: 100%;
+	max-height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 </style>
+
+<script>
+export default {
+	data(){
+		return {
+			dias: [
+				{
+					titulo:'12/06 - Segunda',
+					horarios:[
+						{
+							titulo:'08:30',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor:'red'
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 09:30',
+							eventos:[
+								{
+									titulo:'Roda de Licenciatura',
+									cor:'brown'
+								},
+								{
+									titulo:'Roda de Licenciatura',
+									cor:'brown'
+								},
+								{
+									titulo:'Roda de Licenciatura',
+									cor:'brown'
+								},
+								{
+									titulo:'Roda de Licenciatura',
+									cor:'brown'
+								}
+							]
+						}
+					]
+				},
+				{
+					titulo:'13/06 - Terça',
+					horarios:[]
+				},
+				{
+					titulo:'14/06 - Quarta',
+					horarios:[]
+				}
+			],
+			legendas: [
+				{
+					texto:'Palestras',
+					cor:'green'
+				},
+				{
+					texto:'Minicursos',
+					cor:'orange'
+				},
+				{
+					texto:'Roda de conversa',
+					cor:'brown'
+				},
+				{
+					texto:'Outro',
+					cor:'red'
+				}
+			]
+		}
+	}
+};
+</script>
