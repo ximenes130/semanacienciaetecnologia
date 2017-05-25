@@ -17,8 +17,8 @@
 						<v-card-text :class="((b%2 == 0) ? 'indigo lighten-2 ' : 'indigo lighten-1')+' text-xs-center black--text'">
 							<div>{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
-								<v-card class="transparent" v-for="(evento,c) in horario.eventos" :key="c">
-									<v-card-text :class="evento.cor + ' ma-1'">{{evento.titulo}}</v-card-text>
+								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
+									<v-card-text :class="evento.cor + ' ml-1 mr-1'">{{evento.titulo}}</v-card-text>
 								</v-card>
 							</v-layout>
 						</v-card-text>
@@ -66,6 +66,36 @@ export default {
 					titulo:'12/06 - Segunda',
 					horarios:[
 						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Arduíno',
+									cor:'orange'
+								},
+								{
+									titulo:'Cristiano',
+									cor:'orange'
+								},
+								{
+									titulo:'Android',
+									cor:'orange'
+								},
+								{
+									titulo:'Montagem e controle de lego',
+									cor:'orange'
+								},
+								{
+									titulo:'Astronomia',
+									cor:'orange'
+								},
+							]
+						},
+					]
+				},
+				{
+					titulo:'13/06 - Terça',
+					horarios:[
+						{
 							titulo:'08:30',
 							eventos:[
 								{
@@ -80,26 +110,36 @@ export default {
 								{
 									titulo:'Roda de Licenciatura',
 									cor:'brown'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Dr. Luiz Ribeiro Física Computacional (anfi)',
+									cor:'green'
 								},
 								{
-									titulo:'Roda de Licenciatura',
+									titulo:'IBM: computação cognitiva (Auditório)',
+									cor:'green'
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 16:00',
+							eventos:[
+								{
+									titulo:'Suj.: Roda Fábrica de SW',
 									cor:'brown'
 								},
 								{
-									titulo:'Roda de Licenciatura',
-									cor:'brown'
-								},
-								{
-									titulo:'Roda de Licenciatura',
-									cor:'brown'
+									titulo:'Dr. Luciano Leal Energia solar',
+									cor:'green'
 								}
 							]
 						}
 					]
-				},
-				{
-					titulo:'13/06 - Terça',
-					horarios:[]
 				},
 				{
 					titulo:'14/06 - Quarta',
