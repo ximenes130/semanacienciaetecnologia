@@ -72,6 +72,11 @@ export default {
 		}
 	},
 	data(){
+		var corPalestra = 'teal'
+		var corMinicurso = 'deep-orange'
+		var corRodaConversa = 'brown'
+		var corProjetos = 'deep-purple'
+		var corOutro = 'red'
 		return {
 			dias: [
 				{
@@ -82,7 +87,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -91,7 +96,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Abertura e Homenagem ao Prof. Marcio',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -100,15 +105,15 @@ export default {
 							eventos:[
 								{
 									titulo:'Android',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
-									cor:'teal darken-2'
+									cor: corPalestra
 								},
 								{
 									titulo:'Aguardando confirmação',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -117,7 +122,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo de Almoço',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -126,23 +131,23 @@ export default {
 							eventos:[
 								{
 									titulo:'Android',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'"Prof° Didan Junqueira Ribeiro Arduino (titulo a comfirmar)"',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'Montagem e controle de lego',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'Astronomia',
-									cor:'deep-orange'
+									cor: corMinicurso
 								}
 							]
 						},
@@ -151,7 +156,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -160,7 +165,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -169,15 +174,15 @@ export default {
 							eventos:[
 								{
 									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
-									cor:'deep-orange'
+									cor: corMinicurso
 								},
 								{
 									titulo:'Astronomia',
-									cor:'deep-orange'
+									cor: corMinicurso
 								}
 							]
 						}
@@ -186,12 +191,13 @@ export default {
 				{
 					titulo:'13/06 - Terça',
 					horarios:[
+
 						{
 							titulo:'08:30 - 09:00',
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -200,7 +206,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Roda de licenciatura (Título a confirmar) Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
-									cor:'brown'
+									cor: corRodaConversa
 								}
 							]
 						},
@@ -209,11 +215,11 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luiz Ribeiro Física Computacional',
-									cor:'teal darken-2'
+									cor: corPalestra
 								},
 								{
 									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -222,7 +228,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo de Almoço',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -231,7 +237,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Red Hat ou IBM (A confimar)',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -240,7 +246,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Huawei',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -249,7 +255,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luciano Leal Energia solar',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -258,7 +264,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -267,7 +273,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Apresentação de projetos',
-									cor:'deep-purple'
+									cor: corProjetos
 								}
 							]
 						},
@@ -276,7 +282,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red darken-3'
+									cor: corOutro
 								}
 							]
 						},
@@ -285,7 +291,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestra Automação',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						},
@@ -294,7 +300,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestras de Encerramento',
-									cor:'teal darken-2'
+									cor: corPalestra
 								}
 							]
 						}
@@ -308,7 +314,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Prof. Eryc Construção de Foguete',
-									cor:'deep-orange darken-4'
+									cor: corMinicurso
 								}
 							]
 						}
@@ -318,23 +324,23 @@ export default {
 			legendas: [
 				{
 					texto:'Palestras',
-					cor:'teal--text text--darken-2'
+					cor: corPalestra+'--text'
 				},
 				{
 					texto:'Minicursos',
-					cor:'deep-orange--text'
+					cor: corMinicurso+'--text'
 				},
 				{
 					texto:'Roda de conversa',
-					cor:'brown--text'
+					cor: corRodaConversa+'--text'
 				},
 				{
 					texto:'Projetos',
-					cor:'deep-purple--text'
+					cor: corProjetos+'--text'
 				},
 				{
 					texto:'Outro',
-					cor:'red--text'
+					cor: corOutro+'--text'
 				}
 			]
 		}
