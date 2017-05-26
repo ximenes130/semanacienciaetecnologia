@@ -143,7 +143,17 @@ export default {
 				},
 				{
 					titulo:'14/06 - Quarta',
-					horarios:[]
+					horarios:[
+						{
+							titulo:'08:30',
+							eventos:[
+								{
+									titulo:'Teste',
+									cor:'green'
+								}
+							]
+						}
+					]
 				}
 			],
 			legendas: [
