@@ -2,7 +2,7 @@
 	<v-card class="mt-4">
 		<v-card-row class="indigo darken-3">
 			<v-card-title>
-				<span class="white--text">Mapa do campus</span>
+				<span class="white--text">Programação</span>
 			</v-card-title>
 		</v-card-row>
 
