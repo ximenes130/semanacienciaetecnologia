@@ -3,7 +3,7 @@
 		<sobre id="sobre"></sobre>
 		<campus-endereco id="campus-endereco"></campus-endereco>
 		<inscricao id="inscricao"></inscricao>
-		<!--	<campus-mapa id="campus-mapa"></campus-mapa>  -->
+		<campus-mapa id="campus-mapa"></campus-mapa>
 		<programacao id="programacao"></programacao>
 		<fotos id="fotos"></fotos>
 		<contato id="contato"></contato>
