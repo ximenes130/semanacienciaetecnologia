@@ -3,7 +3,7 @@
 		<v-card-column class="amber darken-1 white--text">
 			<v-card-row class="teal white--text">
 				<v-card-text>
-					<strong>Inscrições Abertas</strong>
+					<strong class="title">Inscrições Abertas</strong>
 					<div>Aproveite e se inscreva-se agora para garantir seu certificado</div>
 				</v-card-text>
 			</v-card-row>
