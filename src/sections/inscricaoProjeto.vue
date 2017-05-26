@@ -13,14 +13,14 @@
 					<v-layout row-sm column child-flex-sm>
 						<v-card class="transparent elevation-0">
 							<div class="ml-1 mr-1">
-								<div  class="ma-1 pa-1 indigo darken-2">Só fazendo um teste, para testar essa parada.... Legal de mais da conta né</div>
-								<div  class="ma-1 pa-1 indigo darken-2">Blalbalblal abalblabl lab labl alblalbalb lablalbal alb alb lablabl ala blab alba</div>
+								<div  class="ma-1 pa-2 indigo darken-2">Só fazendo um teste, para testar essa parada.... Legal de mais da conta né</div>
+								<div  class="ma-1 pa-2 indigo darken-2">Blalbalblal abalblabl lab labl alblalbalb lablalbal alb alb lablabl ala blab alba</div>
 							</div>
 						</v-card>
 						<v-card class="transparent elevation-0">
 							<div class="ml-1 mr-1">
-								<div  class="ma-1 pa-1 indigo darken-2">Balblablalb lab lalb lbalblablbla lab  alb alblab labl alb lablalbalbalb ballalba</div>
-								<div  class="ma-1 pa-1 indigo darken-2">Balbal labl alblalbabl lalb alb lbalal alb lablalal albblalbblalb labllabl blab alb</div>
+								<div  class="ma-1 pa-2 indigo darken-2">Balblablalb lab lalb lbalblablbla lab  alb alblab labl alb lablalbalbalb ballalba</div>
+								<div  class="ma-1 pa-2 indigo darken-2">Balbal labl alblalbabl lalb alb lbalal alb lablalal albblalbblalb labllabl blab alb</div>
 							</div>
 						</v-card>
 					</v-layout>
