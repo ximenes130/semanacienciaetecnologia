@@ -19,7 +19,7 @@
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
 									<v-spacer></v-spacer>
-									<v-card-text :class="evento.cor + ' ml-1 mr-1'">{{evento.titulo}}</v-card-text>
+									<v-card-text :class="evento.cor + ' body-2 ml-1 mr-1'">{{evento.titulo}}</v-card-text>
 								</v-card>
 							</v-layout>
 						</v-card-text>
@@ -36,7 +36,7 @@
 				<v-list-item v-for="(legenda,index) in legendas" :key="index">
 					<v-list-tile tag="div">
 						<v-list-tile-avatar>
-							<v-icon :class="legenda.cor + '--text'">fiber_manual_record</v-icon>
+							<v-icon :class="legenda.cor">fiber_manual_record</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title class="white--text">{{legenda.texto}}</v-list-tile-title>
@@ -71,7 +71,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
@@ -80,7 +80,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Abertura e Homenagem ao Prof. Marcio',
-									cor:'green lighten-1'
+									cor:'teal darken-2'
 								}
 							]
 						},
@@ -88,12 +88,16 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
-									cor:'green lighten-1'
+									titulo:'Android',
+									cor:'deep-orange'
 								},
 								{
-									titulo:'1 para computação',
-									cor:'green lighten-1'
+									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
+									cor:'teal darken-2'
+								},
+								{
+									titulo:'Aguardando confirmação',
+									cor:'teal darken-2'
 								}
 							]
 						},
@@ -102,7 +106,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo de Almoço',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
@@ -110,30 +114,42 @@ export default {
 							titulo:'14:00 - 17:30',
 							eventos:[
 								{
+									titulo:'Android',
+									cor:'deep-orange'
+								},
+								{
+									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									cor:'deep-orange'
+								},
+								{
+									titulo:'"Prof° Didan Junqueira Ribeiro Arduino (titulo a comfirmar)"',
+									cor:'deep-orange'
+								},
+								{
 									titulo:'Montagem e controle de lego',
-									cor:'orange lighten-1'
+									cor:'deep-orange'
 								},
 								{
 									titulo:'Astronomia',
-									cor:'orange lighten-1'
+									cor:'deep-orange'
 								}
 							]
 						},
 						{
-							titulo:'17:30 - 18:30',
+							titulo:'17:30 - 18:00',
 							eventos:[
 								{
 									titulo:'Intervalo',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
 						{
-							titulo:'18:30 - 19:00',
+							titulo:'18:00 - 19:00',
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
@@ -141,12 +157,16 @@ export default {
 							titulo:'19:00 - 22:00',
 							eventos:[
 								{
-									titulo:'Montagem e controle de lego',
-									cor:'orange lighten-1'
+									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									cor:'deep-orange'
+								},
+								{
+									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
+									cor:'deep-orange'
 								},
 								{
 									titulo:'Astronomia',
-									cor:'orange lighten-1'
+									cor:'deep-orange'
 								}
 							]
 						}
@@ -160,16 +180,16 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
 						{
-							titulo:'09:00 - 10:00',
+							titulo:'09:00 - 10:30',
 							eventos:[
 								{
-									titulo:'Roda de licenciatura Professores: Felipe Cabral Demetrius Leão Maria de Fátima Cauê Zaghetto',
-									cor:'brown lighten-2'
+									titulo:'Roda de licenciatura (Título a confirmar) Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
+									cor:'brown'
 								}
 							]
 						},
@@ -178,11 +198,11 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luiz Ribeiro Física Computacional',
-									cor:'green lighten-1'
+									cor:'teal darken-2'
 								},
 								{
-									titulo:'1 para computação',
-									cor:'green lighten-1'
+									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
+									cor:'teal darken-2'
 								}
 							]
 						},
@@ -191,7 +211,25 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo de Almoço',
-									cor:'red lighten-1'
+									cor:'red darken-3'
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 15:00',
+							eventos:[
+								{
+									titulo:'Red Hat ou IBM (A confimar)',
+									cor:'teal darken-2'
+								}
+							]
+						},
+						{
+							titulo:'15:00 - 16:00',
+							eventos:[
+								{
+									titulo:'Huawei',
+									cor:'teal darken-2'
 								}
 							]
 						},
@@ -200,28 +238,25 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luciano Leal Energia solar',
-									cor:'green lighten-1'
-								},
-								{
-									titulo:'1 para computação',
-									cor:'green lighten-1'
+									cor:'teal darken-2'
 								}
 							]
 						},
 						{
-							titulo:'16:00 - 18:30',
+							titulo:'16:00 - 16:30',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor:'red darken-3'
+								}
+							]
+						},
+						{
+							titulo:'16:30 - 18:00',
 							eventos:[
 								{
 									titulo:'Apresentação de projetos',
-									cor:'purple lighten-2'
-								},
-								{
-									titulo:'Levar nossos brinquedos para os alunos apresentarem',
-									cor:'purple lighten-2'
-								},
-								{
-									titulo:'Algum projeto ou banner',
-									cor:'purple lighten-2'
+									cor:'deep-purple'
 								}
 							]
 						},
@@ -230,7 +265,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red lighten-1'
+									cor:'red darken-3'
 								}
 							]
 						},
@@ -239,7 +274,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestra Automação',
-									cor:'green lighten-1'
+									cor:'teal darken-2'
 								}
 							]
 						},
@@ -248,7 +283,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestras de Encerramento',
-									cor:'green lighten-1'
+									cor:'teal darken-2'
 								}
 							]
 						}
@@ -262,7 +297,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Prof. Eryc Construção de Foguete',
-									cor:'orange lighten-1'
+									cor:'deep-orange darken-4'
 								}
 							]
 						}
@@ -272,23 +307,23 @@ export default {
 			legendas: [
 				{
 					texto:'Palestras',
-					cor:'green'
+					cor:'teal--text text--darken-2'
 				},
 				{
 					texto:'Minicursos',
-					cor:'orange'
+					cor:'deep-orange--text'
 				},
 				{
 					texto:'Roda de conversa',
-					cor:'brown'
+					cor:'brown--text'
 				},
 				{
-					texto:'Projeto',
-					cor:'purple'
+					texto:'Projetos',
+					cor:'deep-purple--text'
 				},
 				{
 					texto:'Outro',
-					cor:'red'
+					cor:'red--text'
 				}
 			]
 		}
