@@ -18,6 +18,7 @@
 							<div>{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
+									<v-spacer></v-spacer>
 									<v-card-text :class="evento.cor + ' ml-1 mr-1'">{{evento.titulo}}</v-card-text>
 								</v-card>
 							</v-layout>
@@ -66,50 +67,20 @@ export default {
 					titulo:'12/06 - Segunda',
 					horarios:[
 						{
-							titulo:'14:00 - 17:30',
-							eventos:[
-								{
-									titulo:'Arduíno',
-									cor:'orange'
-								},
-								{
-									titulo:'Cristiano',
-									cor:'orange'
-								},
-								{
-									titulo:'Android',
-									cor:'orange'
-								},
-								{
-									titulo:'Montagem e controle de lego',
-									cor:'orange'
-								},
-								{
-									titulo:'Astronomia',
-									cor:'orange'
-								},
-							]
-						},
-					]
-				},
-				{
-					titulo:'13/06 - Terça',
-					horarios:[
-						{
-							titulo:'08:30',
+							titulo:'08:30 - 09:00',
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red'
+									cor:'red lighten-1'
 								}
 							]
 						},
 						{
-							titulo:'09:00 - 09:30',
+							titulo:'09:00 - 10:00',
 							eventos:[
 								{
-									titulo:'Roda de Licenciatura',
-									cor:'brown'
+									titulo:'Abertura e Homenagem ao Prof. Marcio',
+									cor:'green lighten-1'
 								}
 							]
 						},
@@ -117,12 +88,110 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Dr. Luiz Ribeiro Física Computacional (anfi)',
-									cor:'green'
+									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
+									cor:'green lighten-1'
 								},
 								{
-									titulo:'IBM: computação cognitiva (Auditório)',
-									cor:'green'
+									titulo:'1 para computação',
+									cor:'green lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor:'red lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Montagem e controle de lego',
+									cor:'orange lighten-1'
+								},
+								{
+									titulo:'Astronomia',
+									cor:'orange lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'17:30 - 18:30',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor:'red lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor:'red lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 22:00',
+							eventos:[
+								{
+									titulo:'Montagem e controle de lego',
+									cor:'orange lighten-1'
+								},
+								{
+									titulo:'Astronomia',
+									cor:'orange lighten-1'
+								}
+							]
+						}
+					]
+				},
+				{
+					titulo:'13/06 - Terça',
+					horarios:[
+						{
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor:'red lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 10:00',
+							eventos:[
+								{
+									titulo:'Roda de licenciatura Professores: Felipe Cabral Demetrius Leão Maria de Fátima Cauê Zaghetto',
+									cor:'brown lighten-2'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Dr. Luiz Ribeiro Física Computacional',
+									cor:'green lighten-1'
+								},
+								{
+									titulo:'1 para computação',
+									cor:'green lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor:'red lighten-1'
 								}
 							]
 						},
@@ -130,12 +199,56 @@ export default {
 							titulo:'14:00 - 16:00',
 							eventos:[
 								{
-									titulo:'Suj.: Roda Fábrica de SW',
-									cor:'brown'
+									titulo:'Dr. Luciano Leal Energia solar',
+									cor:'green lighten-1'
 								},
 								{
-									titulo:'Dr. Luciano Leal Energia solar',
-									cor:'green'
+									titulo:'1 para computação',
+									cor:'green lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'16:00 - 18:30',
+							eventos:[
+								{
+									titulo:'Apresentação de projetos',
+									cor:'purple lighten-2'
+								},
+								{
+									titulo:'Levar nossos brinquedos para os alunos apresentarem',
+									cor:'purple lighten-2'
+								},
+								{
+									titulo:'Algum projeto ou banner',
+									cor:'purple lighten-2'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor:'red lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 20:00',
+							eventos:[
+								{
+									titulo:'Palestra Automação',
+									cor:'green lighten-1'
+								}
+							]
+						},
+						{
+							titulo:'20:00 - 22:00',
+							eventos:[
+								{
+									titulo:'Palestras de Encerramento',
+									cor:'green lighten-1'
 								}
 							]
 						}
@@ -143,7 +256,17 @@ export default {
 				},
 				{
 					titulo:'14/06 - Quarta',
-					horarios:[]
+					horarios:[
+						{
+							titulo:'09:00 - 14:00',
+							eventos:[
+								{
+									titulo:'Prof. Eryc Construção de Foguete',
+									cor:'orange lighten-1'
+								}
+							]
+						}
+					]
 				}
 			],
 			legendas: [
@@ -158,6 +281,10 @@ export default {
 				{
 					texto:'Roda de conversa',
 					cor:'brown'
+				},
+				{
+					texto:'Projeto',
+					cor:'purple'
 				},
 				{
 					texto:'Outro',
