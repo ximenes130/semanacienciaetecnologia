@@ -53,7 +53,7 @@
 				<v-list-item @click="scrollTo('#inscricaoProjeto')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>assignment_ind</v-icon>
+							<v-icon light>assignment</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Inscrição de Projetos</v-list-tile-title>
