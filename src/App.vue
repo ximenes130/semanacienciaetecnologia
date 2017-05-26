@@ -50,6 +50,16 @@
 						</v-list-tile-content>
 					</v-list-tile>
 				</v-list-item>
+				<v-list-item @click="scrollTo('#inscricaoProjeto')">
+					<v-list-tile ripple>
+						<v-list-tile-avatar>
+							<v-icon light>assignment_ind</v-icon>
+						</v-list-tile-avatar>
+						<v-list-tile-content>
+							<v-list-tile-title>Inscrição de Projetos</v-list-tile-title>
+						</v-list-tile-content>
+					</v-list-tile>
+				</v-list-item>
 	<!--
 				<v-list-item @click="scrollTo('#campus-mapa')">
 					<v-list-tile ripple>
