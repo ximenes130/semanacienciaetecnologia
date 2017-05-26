@@ -8,7 +8,7 @@
 		<v-card-text class="teal darken-3 white--text">
 			<v-list>
 				<v-list-item @click="openUrl('tel:+556121032200')">
-					<v-list-tile>
+					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<v-icon class="white--text">phone</v-icon>
 						</v-list-tile-avatar>
@@ -18,7 +18,7 @@
 					</v-list-tile>
 				</v-list-item>
 				<v-list-item @click="openUrl('mailto:gmail.com')">
-					<v-list-tile>
+					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<v-icon class="white--text">mail</v-icon>
 						</v-list-tile-avatar>
@@ -28,7 +28,7 @@
 					</v-list-tile>
 				</v-list-item>
 				<v-list-item @click="openUrl('http://ifb.edu.br')">
-					<v-list-tile>
+					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<v-icon class="white--text">language</v-icon>
 						</v-list-tile-avatar>
@@ -38,7 +38,7 @@
 					</v-list-tile>
 				</v-list-item>
 				<v-list-item @click="openUrl('https://www.facebook.com/semanacienciaetecnologia/')">
-					<v-list-tile>
+					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<img src="img/social/facebook.png">
 						</v-list-tile-avatar>
@@ -48,7 +48,7 @@
 					</v-list-tile>
 				</v-list-item>
 				<v-list-item @click="openUrl('https://twitter.com/sctifb')">
-					<v-list-tile>
+					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<img src="img/social/twitter.png">
 						</v-list-tile-avatar>
