@@ -1,6 +1,6 @@
 <template>
 	<v-card class="mt-4">
-		<v-card-row class="indigo darken-3">
+		<v-card-row class="teal darken-3">
 			<v-card-title>
 				<span class="white--text">Programação</span>
 			</v-card-title>
@@ -11,11 +11,11 @@
 		<v-card-row>
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content  class="indigo elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
+				<v-expansion-panel-content  class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
 					<div slot="header" class="white--text">{{dia.titulo}}</div>
 					<v-card v-for="(horario, b) in dia.horarios" :key="b">
-						<v-card-text :class="((b % 2 == 0) ? 'indigo darken-4' : 'indigo darken-3') + ' text-xs-center white--text'">
-							<div class="indigo--text text--lighten-4">{{horario.titulo}}</div>
+						<v-card-text :class="((b % 2 == 0) ? 'teal darken-4' : 'teal darken-3') + ' text-xs-center white--text'">
+							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card v-for="(evento,c) in horario.eventos" :key="c" :class="'transparent elevation-5 mr-1 ml-1 mt-1 mb-1 '+evento.cor">
 									<v-card-text>{{evento.titulo}}</v-card-text>
@@ -30,7 +30,7 @@
 
 		<!-- Legendas -->
 
-		<v-card-text class="indigo darken-2 white--text">
+		<v-card-text class="teal darken-2 white--text">
 			<v-list dense>
 				<v-list-item v-for="(legenda,index) in legendas" :key="index">
 					<v-list-tile tag="div">
@@ -109,7 +109,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Roda de Licenciatura',
-									cor:'brown'
+									cor:'blue'
 								}
 							]
 						},
@@ -131,7 +131,7 @@ export default {
 							eventos:[
 								{
 									titulo:'Suj.: Roda Fábrica de SW',
-									cor:'brown'
+									cor:'blue'
 								},
 								{
 									titulo:'Dr. Luciano Leal Energia solar',
@@ -167,7 +167,7 @@ export default {
 				},
 				{
 					texto:'Roda de conversa',
-					cor:'brown'
+					cor:'blue'
 				},
 				{
 					texto:'Outro',
