@@ -14,6 +14,7 @@ import contato  from '../sections/contato.vue'
 import programacao from '../sections/programacao.vue'
 import fotos  from '../sections/fotos.vue'
 import inscricao from '../sections/inscricao.vue'
+import inscricaoProjeto from '../sections/inscricaoProjeto.vue'
 
 // Registro de componentes
 
@@ -25,6 +26,7 @@ Vue.component('contato',contato);
 Vue.component('programacao',programacao);
 Vue.component('fotos',fotos);
 Vue.component('inscricao',inscricao);
+Vue.component('inscricaoProjeto',inscricaoProjeto);
 
 //
 
