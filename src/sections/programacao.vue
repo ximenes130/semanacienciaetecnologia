@@ -15,9 +15,9 @@
 					<div slot="header" class="white--text">{{dia.titulo}}</div>
 					<v-card v-for="(horario, b) in dia.horarios" :key="b">
 						<v-card-text :class="((b % 2 == 0) ? 'indigo darken-4' : 'indigo darken-3') + ' text-xs-center white--text'">
-							<div class="mb-1 indigo--text text--lighten-4">{{horario.titulo}}</div>
+							<div class="indigo--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
-								<v-card v-for="(evento,c) in horario.eventos" :key="c" :class="'transparent elevation-5 mr-1 ml-1 '+evento.cor">
+								<v-card v-for="(evento,c) in horario.eventos" :key="c" :class="'transparent elevation-5 mr-1 ml-1 mt-1 mb-1 '+evento.cor">
 									<v-card-text>{{evento.titulo}}</v-card-text>
 								</v-card>
 							</v-layout>
