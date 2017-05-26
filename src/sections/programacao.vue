@@ -12,13 +12,13 @@
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
 				<v-expansion-panel-content  class="indigo elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
-					<div slot="header" class="white--text "> {{dia.titulo}}</div>
-					<v-card v-for="(horario,b) in dia.horarios" :key="b">
-						<v-card-text :class="((b%2 == 0) ? 'indigo lighten-2 ' : 'indigo lighten-1')+' text-xs-center black--text'">
-							<div>{{horario.titulo}}</div>
+					<div slot="header" class="white--text">{{dia.titulo}}</div>
+					<v-card v-for="(horario, b) in dia.horarios" :key="b">
+						<v-card-text :class="((b % 2 == 0) ? 'indigo darken-4' : 'indigo darken-3') + ' text-xs-center white--text'">
+							<div class="mb-1 indigo--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
-								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
-									<v-card-text :class="evento.cor + ' ml-1 mr-1'">{{evento.titulo}}</v-card-text>
+								<v-card v-for="(evento,c) in horario.eventos" :key="c" :class="'transparent elevation-5 mr-1 ml-1 '+evento.cor">
+									<v-card-text>{{evento.titulo}}</v-card-text>
 								</v-card>
 							</v-layout>
 						</v-card-text>
@@ -30,10 +30,10 @@
 
 		<!-- Legendas -->
 
-		<v-card-text class="indigo darken-3 white--text">
-			<v-list>
+		<v-card-text class="indigo darken-2 white--text">
+			<v-list dense>
 				<v-list-item v-for="(legenda,index) in legendas" :key="index">
-					<v-list-tile>
+					<v-list-tile tag="div">
 						<v-list-tile-avatar>
 							<v-icon :class="legenda.cor + '--text'">fiber_manual_record</v-icon>
 						</v-list-tile-avatar>
