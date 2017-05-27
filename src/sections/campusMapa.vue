@@ -10,7 +10,7 @@
 			<v-expansion-panel class="elevation-0">
 				<v-expansion-panel-content class="indigo white--text elevation-0" v-for="(mapa,index) in mapas" :key="index">
 					<div slot="header" class="white--text elevation-0"> {{mapa.titulo}}</div>
-					<v-card>
+					<v-card class="pt-2 pb-2">
 						<img :src="mapa.imagem"  class="mapa-img">
 					</v-card>
 				</v-expansion-panel-content>
@@ -37,11 +37,11 @@ export default {
 			mapas: [
 				{
 					titulo:'Salas de aula - Terreo',
-					imagem:'img/mapas/terreo.png'
+					imagem:'img/mapas/terreo.svg'
 				},
 				{
 					titulo:'Salas de aula - 1º andar',
-					imagem:'img/mapas/andar-1.png'
+					imagem:'img/mapas/andar-1.svg'
 				}
 			],
 		}
