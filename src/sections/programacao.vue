@@ -1,6 +1,6 @@
 <template>
 	<v-card class="mt-4">
-		<v-card-row class="indigo darken-3">
+		<v-card-row class="teal darken-3">
 			<v-card-title>
 				<span class="white--text">Cronograma</span>
 			</v-card-title>
@@ -11,11 +11,11 @@
 		<v-card-row>
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content @click="scrollTo('#cronograma-'+a)" class="indigo elevation-0 body-2 white--text" :id="'cronograma-'+a" v-for="(dia,a) in dias" :key="a" ripple>
-					<div slot="header" class="white--text" >{{dia.titulo}}</div>
+				<v-expansion-panel-content  class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
+					<div slot="header" class="white--text">{{dia.titulo}}</div>
 					<v-card v-for="(horario, b) in dia.horarios" :key="b">
-						<v-card-text :class="((b % 2 == 0) ? 'indigo darken-4' : 'indigo darken-3') + ' text-xs-center white--text'">
-							<div class="indigo--text text--lighten-4">{{horario.titulo}}</div>
+						<v-card-text :class="((b % 2 == 0) ? 'teal darken-4' : 'teal darken-3') + ' text-xs-center white--text'">
+							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
 									<v-spacer></v-spacer>
@@ -31,7 +31,7 @@
 
 		<!-- Legendas -->
 
-		<v-card-text class="indigo darken-2 white--text">
+		<v-card-text class="teal darken-2 white--text">
 			<v-list dense>
 				<v-list-item v-for="(legenda,index) in legendas" :key="index">
 					<v-list-tile tag="div">
