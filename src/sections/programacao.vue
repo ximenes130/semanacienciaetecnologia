@@ -18,8 +18,13 @@
 							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
-									<v-spacer></v-spacer>
-									<v-card-text :class="evento.cor + ' body-2 ml-1 mr-1'">{{evento.titulo}}</v-card-text>
+									<v-card-row>
+										<v-card-text :class="evento.cor + ' elevation-1 ml-1 mr-1'">
+											<div class="body-2">{{evento.titulo}}	</div>
+											<v-divider v-if="evento.local"></v-divider>
+											<div class="caption">{{evento.local}}	</div>
+										</v-card-text>
+									</v-card-row>
 								</v-card>
 							</v-layout>
 						</v-card-text>
@@ -73,7 +78,7 @@ export default {
 	},
 	data(){
 		var corPalestra = 'teal'
-		var corMinicurso = 'deep-orange'
+		var corMinicurso = 'blue-grey'
 		var corRodaConversa = 'brown'
 		var corProjetos = 'deep-purple'
 		var corOutro = 'red'
@@ -96,7 +101,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Abertura e Homenagem ao Prof. Marcio',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -105,15 +111,18 @@ export default {
 							eventos:[
 								{
 									titulo:'Android',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Aguardando confirmação',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -131,23 +140,28 @@ export default {
 							eventos:[
 								{
 									titulo:'Android',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'"Prof° Didan Junqueira Ribeiro Arduino (titulo a comfirmar)"',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Montagem e controle de lego',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Astronomia',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -174,15 +188,18 @@ export default {
 							eventos:[
 								{
 									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Astronomia',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								}
 							]
 						}
@@ -191,7 +208,6 @@ export default {
 				{
 					titulo:'13/06 - Terça',
 					horarios:[
-
 						{
 							titulo:'08:30 - 09:00',
 							eventos:[
@@ -206,7 +222,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Roda de licenciatura (Título a confirmar) Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
-									cor: corRodaConversa
+									cor: corRodaConversa,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -215,11 +232,13 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luiz Ribeiro Física Computacional',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								},
 								{
 									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -228,7 +247,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Intervalo de Almoço',
-									cor: corOutro
+									cor: corOutro,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -237,7 +257,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Red Hat ou IBM (A confimar)',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -246,7 +267,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Huawei',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -255,7 +277,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Dr. Luciano Leal Energia solar',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -273,7 +296,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Apresentação de projetos',
-									cor: corProjetos
+									cor: corProjetos,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -291,7 +315,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestra Automação',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -300,7 +325,8 @@ export default {
 							eventos:[
 								{
 									titulo:'Palestras de Encerramento',
-									cor: corPalestra
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						}
@@ -310,11 +336,79 @@ export default {
 					titulo:'14/06 - Quarta',
 					horarios:[
 						{
-							titulo:'09:00 - 14:00',
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 10:00',
+							eventos:[
+								{
+									titulo:'Jose Gonçalo (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Daniel Saad (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 11:30',
 							eventos:[
 								{
 									titulo:'Prof. Eryc Construção de Foguete',
-									cor: corMinicurso
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Anderson Ferreira Catarina Melo Dermevaldo Dias Raquel Passos Algoritime-se (Oficina de Introdução a Algoritmos)',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 22:00',
+							eventos:[
+								{
+									titulo:'Prof° Cristiano Pereira (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						}
