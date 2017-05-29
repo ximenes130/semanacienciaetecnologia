@@ -71,7 +71,6 @@
 						</v-list-tile-content>
 					</v-list-tile>
 				</v-list-item>
-	-->
 				<v-list-item @click="scrollTo('#programacao')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>

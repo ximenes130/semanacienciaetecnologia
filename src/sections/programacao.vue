@@ -1,6 +1,6 @@
 <template>
 	<v-card class="mt-4">
-		<v-card-row class="indigo darken-3">
+		<v-card-row class="teal darken-3">
 			<v-card-title>
 				<span class="white--text">Cronograma</span>
 			</v-card-title>
@@ -11,14 +11,20 @@
 		<v-card-row>
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content  class="indigo elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
-					<div slot="header" class="white--text "> {{dia.titulo}}</div>
-					<v-card v-for="(horario,b) in dia.horarios" :key="b">
-						<v-card-text :class="((b%2 == 0) ? 'indigo lighten-2 ' : 'indigo lighten-1')+' text-xs-center black--text'">
-							<div>{{horario.titulo}}</div>
+				<v-expansion-panel-content  class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
+					<div slot="header" class="white--text">{{dia.titulo}}</div>
+					<v-card v-for="(horario, b) in dia.horarios" :key="b">
+						<v-card-text :class="((b % 2 == 0) ? 'teal darken-4' : 'teal darken-3') + ' text-xs-center white--text'">
+							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
-									<v-card-text :class="evento.cor + ' ml-1 mr-1'">{{evento.titulo}}</v-card-text>
+									<v-card-row>
+										<v-card-text :class="evento.cor + ' elevation-1 ml-1 mr-1'">
+											<div class="body-2">{{evento.titulo}}	</div>
+											<v-divider v-if="evento.local"></v-divider>
+											<div class="caption">{{evento.local}}	</div>
+										</v-card-text>
+									</v-card-row>
 								</v-card>
 							</v-layout>
 						</v-card-text>
@@ -30,12 +36,12 @@
 
 		<!-- Legendas -->
 
-		<v-card-text class="indigo darken-3 white--text">
-			<v-list>
+		<v-card-text class="teal darken-2 white--text">
+			<v-list dense>
 				<v-list-item v-for="(legenda,index) in legendas" :key="index">
-					<v-list-tile>
+					<v-list-tile tag="div">
 						<v-list-tile-avatar>
-							<v-icon :class="legenda.cor + '--text'">fiber_manual_record</v-icon>
+							<v-icon :class="legenda.cor">fiber_manual_record</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title class="white--text">{{legenda.texto}}</v-list-tile-title>
@@ -58,58 +64,45 @@
 </style>
 
 <script>
+import $ from 'jquery'
 export default {
+	methods: {
+		scrollTo(selector){
+			$('html, body').animate({
+				scrollTop: $(selector).offset().top - 78
+			});
+			if(innerWidth < 992){
+				this.sidebar = false;
+			}
+		}
+	},
 	data(){
+		var corPalestra = 'teal'
+		var corMinicurso = 'blue-grey'
+		var corRodaConversa = 'brown'
+		var corProjetos = 'deep-purple'
+		var corOutro = 'red'
 		return {
 			dias: [
 				{
 					titulo:'12/06 - Segunda',
 					horarios:[
 						{
-							titulo:'14:00 - 17:30',
-							eventos:[
-								{
-									titulo:'Arduíno',
-									cor:'orange'
-								},
-								{
-									titulo:'Cristiano',
-									cor:'orange'
-								},
-								{
-									titulo:'Android',
-									cor:'orange'
-								},
-								{
-									titulo:'Montagem e controle de lego',
-									cor:'orange'
-								},
-								{
-									titulo:'Astronomia',
-									cor:'orange'
-								},
-							]
-						},
-					]
-				},
-				{
-					titulo:'13/06 - Terça',
-					horarios:[
-						{
-							titulo:'08:30',
+							titulo:'08:30 - 09:00',
 							eventos:[
 								{
 									titulo:'Credenciamento',
-									cor:'red'
+									cor: corOutro
 								}
 							]
 						},
 						{
-							titulo:'09:00 - 09:30',
+							titulo:'09:00 - 10:00',
 							eventos:[
 								{
-									titulo:'Roda de Licenciatura',
-									cor:'brown'
+									titulo:'Abertura e Homenagem ao Prof. Marcio',
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -117,12 +110,165 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Dr. Luiz Ribeiro Física Computacional (anfi)',
-									cor:'green'
+									titulo:'Android',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
 								},
 								{
-									titulo:'IBM: computação cognitiva (Auditório)',
-									cor:'green'
+									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Aguardando confirmação',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Android',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'"Prof° Didan Junqueira Ribeiro Arduino (titulo a comfirmar)"',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Montagem e controle de lego',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Astronomia',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'17:30 - 18:00',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'18:00 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 22:00',
+							eventos:[
+								{
+									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Astronomia',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						}
+					]
+				},
+				{
+					titulo:'13/06 - Terça',
+					horarios:[
+						{
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 10:30',
+							eventos:[
+								{
+									titulo:'Roda de licenciatura (Título a confirmar) Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
+									cor: corRodaConversa,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Dr. Luiz Ribeiro Física Computacional',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								},
+								{
+									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 15:00',
+							eventos:[
+								{
+									titulo:'Red Hat ou IBM (A confimar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'15:00 - 16:00',
+							eventos:[
+								{
+									titulo:'Huawei',
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						},
@@ -130,12 +276,57 @@ export default {
 							titulo:'14:00 - 16:00',
 							eventos:[
 								{
-									titulo:'Suj.: Roda Fábrica de SW',
-									cor:'brown'
-								},
-								{
 									titulo:'Dr. Luciano Leal Energia solar',
-									cor:'green'
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'16:00 - 16:30',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'16:30 - 18:00',
+							eventos:[
+								{
+									titulo:'Apresentação de projetos',
+									cor: corProjetos,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 20:00',
+							eventos:[
+								{
+									titulo:'Palestra Automação',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'20:00 - 22:00',
+							eventos:[
+								{
+									titulo:'Palestras de Encerramento',
+									cor: corPalestra,
+									local: 'Local a confirmar'
 								}
 							]
 						}
@@ -143,25 +334,107 @@ export default {
 				},
 				{
 					titulo:'14/06 - Quarta',
-					horarios:[]
+					horarios:[
+						{
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 10:00',
+							eventos:[
+								{
+									titulo:'Jose Gonçalo (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Daniel Saad (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 11:30',
+							eventos:[
+								{
+									titulo:'Prof. Eryc Construção de Foguete',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Anderson Ferreira Catarina Melo Dermevaldo Dias Raquel Passos Algoritime-se (Oficina de Introdução a Algoritmos)',
+									cor: corMinicurso,
+									local: 'Local a confirmar'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 22:00',
+							eventos:[
+								{
+									titulo:'Prof° Cristiano Pereira (Titulo a confirmar)',
+									cor: corPalestra,
+									local: 'Local a confirmar'
+								}
+							]
+						}
+					]
 				}
 			],
 			legendas: [
 				{
 					texto:'Palestras',
-					cor:'green'
+					cor: corPalestra+'--text'
 				},
 				{
 					texto:'Minicursos',
-					cor:'orange'
+					cor: corMinicurso+'--text'
 				},
 				{
 					texto:'Roda de conversa',
-					cor:'brown'
+					cor: corRodaConversa+'--text'
+				},
+				{
+					texto:'Projetos',
+					cor: corProjetos+'--text'
 				},
 				{
 					texto:'Outro',
-					cor:'red'
+					cor: corOutro+'--text'
 				}
 			]
 		}

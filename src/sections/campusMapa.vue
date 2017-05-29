@@ -10,73 +10,41 @@
 			<v-expansion-panel class="elevation-0">
 				<v-expansion-panel-content class="indigo white--text elevation-0" v-for="(mapa,index) in mapas" :key="index">
 					<div slot="header" class="white--text elevation-0"> {{mapa.titulo}}</div>
-					<v-card>
+					<v-card class="pt-2 pb-2">
 						<img :src="mapa.imagem"  class="mapa-img">
 					</v-card>
 				</v-expansion-panel-content>
 			</v-expansion-panel>
 			<v-spacer></v-spacer>
 		</v-card-row>
-		<v-card-text class="indigo darken-3 white--text">
-			<v-list>
-				<v-list-item v-for="(legenda,index) in legendas" :key="index">
-					<v-list-tile>
-						<v-list-tile-avatar>
-							<v-icon :class="legenda.cor + '--text'">fiber_manual_record</v-icon>
-						</v-list-tile-avatar>
-						<v-list-tile-content>
-							<v-list-tile-title class="white--text">{{legenda.texto}}</v-list-tile-title>
-						</v-list-tile-content>
-					</v-list-tile>
-				</v-list-item>
-			</v-list>
-		</v-card-text>
 	</v-card>
 </template>
 
 <style scoped>
-	.mapa-img{
-		max-width: 100%;
-		max-height: 500px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+.mapa-img{
+	max-width: 100%;
+	max-height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 </style>
 
 <script>
-	export default {
-		data(){
-			return {
-				mapas: [
-				{
-					titulo:'Mapa do campus',
-					imagem:'img/mapas/Mapa teste.png'
-				},
+export default {
+	data(){
+		return {
+			mapas: [
 				{
 					titulo:'Salas de aula - Terreo',
-					imagem:'img/mapas/Mapa teste.png'
+					imagem:'img/mapas/terreo.svg'
 				},
 				{
-					titulo:'Salas de aula - 1º Andar',
-					imagem:'img/mapas/Mapa teste.png'
+					titulo:'Salas de aula - 1º andar',
+					imagem:'img/mapas/andar-1.svg'
 				}
-				],
-				legendas: [
-				{
-					texto:'teste 1',
-					cor:'green'
-				},
-				{
-					texto:'teste 2',
-					cor:'yellow'
-				},
-				{
-					texto:'teste 3',
-					cor:'red'
-				}
-				]
-			}
+			],
 		}
-	};
+	}
+};
 </script>
