@@ -37,11 +37,11 @@ export default {
 			mapas: [
 				{
 					titulo:'Salas de aula - Terreo',
-					imagem:'/img/mapas/terreo.svg'
+					imagem:'img/mapas/terreo.svg'
 				},
 				{
 					titulo:'Salas de aula - 1º andar',
-					imagem:'/img/mapas/andar-1.svg'
+					imagem:'img/mapas/andar-1.svg'
 				}
 			],
 		}
