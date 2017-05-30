@@ -5,16 +5,14 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
 ---
 
 ### TO-DOs
-- [ ] Sobre
-- [ ] Inscrições
-- [ ] Programação
-- [ ] Mapa do Campus
+- [x] Sobre
+- [x] Inscrições
+- [x] Inscrições de projetos
+- [x] Programação
+- [x] Mapa do Campus
 - [x] Endereço do Campus + Mapa
-- [ ] Fotos
-     - [ ] Estive no evento
-     - [ ] Melhores momentos
-     - [ ] compartilhavel
-- [ ] Entre em contato
+- [x] Fotos
+- [x] Entre em contato
 - [ ] Criação do "npm start Script" para Deploy
 
 ### Como rodar (Node.js instalado)
