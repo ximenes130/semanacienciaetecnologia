@@ -1,11 +1,11 @@
 <template>
 	<v-card horizontal class="mt-4">
-			<v-card-row height="500px" img="/img/cards/projeto.jpg" class="hidden-xs-only"></v-card-row>
+		<v-card-row img="img/cards/projeto.jpg" class="hidden-xs-only" height="500px"></v-card-row>
 		<v-card-column>
 			<v-card-row class="indigo white--text">
 				<v-card-text>
 					<strong class="title">Inscrição de Projetos</strong>
-					<div class="pt-1">
+					<div class="pt-1 pb-2">
 						Estaremos aceitando a submissão de projetos para serem apresentados
 						na forma de banners e protótipos do dia <strong>01/06/2017</strong>
 						até o dia <strong>05/06/2017</strong>, devendo seguir os seguintes
