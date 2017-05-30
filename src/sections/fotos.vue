@@ -5,7 +5,7 @@
 				<span class="white--text">Fotos do Evento</span>
 			</v-card-title>
 		</v-card-row>
-		<v-carousel>
+		<v-carousel :cycle="false">
 			<v-carousel-item v-for="(foto, index) in fotos" :src="foto" :key="index"></v-carousel-item>
 		</v-carousel>
 	</v-card>
