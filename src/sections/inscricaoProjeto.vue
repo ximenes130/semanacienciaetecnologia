@@ -1,20 +1,22 @@
 <template>
 	<v-card horizontal class="mt-4">
-			<v-card-row height="400px" img="/img/cards/projeto.jpg"></v-card-row>
+			<v-card-row height="500px" img="/img/cards/projeto.jpg" class="hidden-xs-only"></v-card-row>
 		<v-card-column>
 			<v-card-row class="indigo white--text">
 				<v-card-text>
 					<strong class="title">Inscrição de Projetos</strong>
 					<div class="pt-1">
-						Estamos aceitando a submissão de projetos para serem apresentados
-						na forma de banners até o dia <strong>99/99/2017</strong>, devendo
-						seguir os seguintes requisitos:
+						Estaremos aceitando a submissão de projetos para serem apresentados
+						na forma de banners e protótipos do dia <strong>01/06/2017</strong>
+						até o dia <strong>05/06/2017</strong>, devendo seguir os seguintes
+						requisitos:
 					</div>
 					<v-layout row-sm column child-flex-sm>
 						<v-card class="transparent elevation-0">
 							<div class="ml-1 mr-1">
 								<div  class="ma-1 pa-2 indigo darken-2">Área de conhecimento: Ciências Exatas e da Terra</div>
 								<div  class="ma-1 pa-2 indigo darken-2">Possuir protótipo ou banner impresso no momento de inscrição</div>
+								<div  class="ma-1 pa-2 indigo darken-2">Possuir disponibilidade para apresentar seu projeto no dia <strong>13/06/2017</strong> ás 16:30</div>
 							</div>
 						</v-card>
 						<v-card class="transparent elevation-0">
@@ -33,7 +35,7 @@
 					<v-btn flat class="white--text" @click.native="openUrl('http://www.sbpcnet.org.br/portoseguro/arquivos/modelo_resumo.doc');">
 						<v-icon left light>file_download</v-icon> Modelo de resumo
 					</v-btn>
-					<v-btn flat class="white--text" @click.native="openUrl('https://www.google.com.br/maps/place/Instituto+Federal+de+Bras%C3%ADlia+Campus+Taguatinga/@-15.7936003,-48.1132566,14.58z/data=!4m5!3m4!1s0x0:0x63a91cbeaf63f89e!8m2!3d-15.7942254!4d-48.1021088');">
+					<v-btn flat class="white--text" v-tooltip:top="{ html: 'Inscrições Fechadas' }"><!--@click.native="openUrl('https://goo.gl/forms/dZX9MeVqKZWadofj1@click.native=');"-->
 						<v-icon left light>assignment</v-icon> Inscrever Projeto
 					</v-btn>
 				</v-layout>
