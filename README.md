@@ -39,15 +39,3 @@ git add .
 git commit -m "Descrição"
 git push origin master
 ```
-
-## Utilizando Docker
-
-#### Para construir e atualizar a imagem da aplicação:
-```
-	sudo docker build -t sctnode:v0.1 .
-```
-#### Para iniciar o container:
-
-```
-	sudo docker run -d --name sctcontainer -p 8082:8082 sctnode:v0.1
-```
