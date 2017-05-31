@@ -13,7 +13,7 @@ Acesse o site em: https://ximenes130.github.io/semanacienciaetecnologia
 - [x] Endereço do Campus + Mapa
 - [x] Fotos
 - [x] Entre em contato
-- [ ] Criação do "npm start Script" para Deploy
+- [x] Criação do "npm start Script" para Deploy
 
 ### Como rodar (Node.js instalado)
 
@@ -39,3 +39,5 @@ git add .
 git commit -m "Descrição"
 git push origin master
 ```
+
+### [Build pronto para deploy com Docker](https://github.com/ximenes130/semanacienciaetecnologia/releases/tag/1.0)
