@@ -41,3 +41,8 @@ git push origin master
 ```
 
 ### [Build pronto para deploy com Docker](https://github.com/ximenes130/semanacienciaetecnologia/releases/tag/1.0)
+
+### Criando uma build para deploy
+- Baixe o arquivo sct.zip de alguma build
+- Extraia ele
+- Substitua o conteúdo da pasta www pelo novo conteúdo. Esse novo conteúdo é a pasta dist, img e o arquivo index.html do repositório.
