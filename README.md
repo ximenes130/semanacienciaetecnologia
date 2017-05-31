@@ -42,16 +42,11 @@ git push origin master
 
 ## Utilizando Docker
 
-#### Obtenha a imagem base NodeJS para Docker:
-```
-	docker pull node
-```
-
 #### Para construir e atualizar a imagem da aplicação:
 ```
 	sudo docker build -t sctnode:v0.1 .
 ```
-#### Para Iniciar o container
+#### Para iniciar o container:
 
 ```
 	sudo docker run -d --name sctcontainer -p 8082:8082 sctnode:v0.1
