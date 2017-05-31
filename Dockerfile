@@ -1,15 +1,15 @@
-FROM node:7-onbuild
+FROM node:boron
 
-RUN mkdir -p /src/app
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-WORKDIR /src/app
-
-COPY package.json /src/app/package.json
-
+# Install app dependencies
+COPY package.json /usr/src/app/
 RUN npm install
 
-COPY . /src/app
+# Bundle app source
+COPY . /usr/src/app
 
 EXPOSE 8082
-
-CMD ["npm","run","dev"]
+CMD [ "npm", "start" ]
