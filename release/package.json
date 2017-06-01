@@ -1,0 +1,29 @@
+{
+	"name": "sct",
+	"version": "1.0.0",
+	"description": "Build 1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ximenes130/semanacienciaetecnologia.git"
+	},
+	"keywords": [
+		"Build",
+		"SC&T"
+	],
+	"author": "IFB Developers",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ximenes130/semanacienciaetecnologia/issues"
+	},
+	"homepage": "https://github.com/ximenes130/semanacienciaetecnologia#readme",
+	"dependencies": {
+		"compression": "^1.6.2",
+		"express": "^4.15.3",
+		"serve-static": "^1.12.3"
+	}
+}
