@@ -97,12 +97,22 @@ export default {
 							]
 						},
 						{
-							titulo:'09:00 - 10:00',
+							titulo:'09:00 - 09:20',
 							eventos:[
 								{
-									titulo:'Abertura e Homenagem ao Marcio / IEEE - Lídia Ruanny Luiz Felipe',
+									titulo:'Abertura e Homenagem ao Marcio',
 									cor: corPalestra,
-									local: 'Anfiteatro'
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'09:20 - 10:00',
+							eventos:[
+								{
+									titulo:"IEEE - Lídia Ruanny e Luiz Felipe",
+									cor: corPalestra,
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -110,19 +120,19 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Lucas Campos - Android',
+									titulo:'Android: Começando do Zero - Lucas Campos',
 									cor: corMinicurso,
-									local: ''
+									local: 'Laboratorio 15'
 								},
 								{
-									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
+									titulo:'O Programa Espacial Brasileiro - Dr. Rodrigo Leonard (Agência Espacial Brasileira)',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								},
 								{
-									titulo:'Edson Rosa dos Santos Júnior A Interconexão e os riscos da era virtual com o advento do sequestro digital',
+									titulo:'A Interconexão e os riscos da era virtual com o advento do sequestro digital - Edson Rosa dos Santos Júnior',
 									cor: corPalestra,
-									local: ''
+									local: 'Anfiteatro'
 								}
 							]
 						},
@@ -139,27 +149,27 @@ export default {
 							titulo:'14:00 - 17:30',
 							eventos:[
 								{
-									titulo:'Lucas Campos - Android',
+									titulo:'Android: Começando do Zero - Lucas Campos',
+									cor: corMinicurso,
+									local: 'Laboratorio 15'
+								},
+								{
+									titulo:'Contando histórias e Ensinando Matemática: Uma Introdução a Teoria dos Grafos - Prof° Cristiano Pereira',
 									cor: corMinicurso,
 									local: ''
 								},
 								{
-									titulo:'Prof° Cristiano Pereira',
+									titulo:'Edubot: Robótica para Educação - Arthur Braga Vidal',
 									cor: corMinicurso,
 									local: ''
 								},
 								{
-									titulo:'Arthur Braga Vidal - Robótica Edubot',
+									titulo:'Montagem e controle de lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
 									cor: corMinicurso,
 									local: ''
 								},
 								{
-									titulo:'Rodrigo Maia Iran Carlos Ribeiro - Montagem e controle de lego',
-									cor: corMinicurso,
-									local: ''
-								},
-								{
-									titulo:'Profº Frederico Jordão - Astronomia',
+									titulo:'Astronomia - Prof. Frederico Jordão',
 									cor: corMinicurso,
 									local: ''
 								}
@@ -187,17 +197,17 @@ export default {
 							titulo:'19:00 - 22:00',
 							eventos:[
 								{
-									titulo:'Prof° Cristiano Pereira',
+									titulo:'MatLab: Fundamentos - Prof. Cristiano Pereira da Silva',
 									cor: corMinicurso,
 									local: ''
 								},
 								{
-									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
+									titulo:'Montagem e controle de lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
 									cor: corMinicurso,
 									local: ''
 								},
 								{
-									titulo:'Profº Frederico Jordão - Clube de Astronomia',
+									titulo:'Clube de Astronomia - Prof. Frederico Jordão',
 									cor: corMinicurso,
 									local: ''
 								}
@@ -221,9 +231,9 @@ export default {
 							titulo:'09:00 - 10:30',
 							eventos:[
 								{
-									titulo:'Formação docente : experiência e concepção sobre o ensino de Física e Computação - Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
+									titulo:'Formação docente: experiência e concepção sobre o ensino de Física e Computação - Prof.Cauê Zaghetto, Prof. Demetrius dos Santos Leão, Prof. Felipe de Lemos Cabral, Prof.Maria de Fátima Ramos Brandão',
 									cor: corRodaConversa,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -231,14 +241,14 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Dr. Luiz Ribeiro Física Computacional',
+									titulo:'Física Computacional - Dr. Luiz Ribeiro ',
 									cor: corPalestra,
-									local: ''
+									local: 'Anfiteatro'
 								},
 								{
-									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
+									titulo:'Computação Cognitiva - Gustavo A. Angelim Morais (IBM) ',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -256,29 +266,29 @@ export default {
 							titulo:'14:00 - 15:00',
 							eventos:[
 								{
-									titulo:'Elvis Rocha - Introducao Red Hat Passar pelo portifolio de MW e detalhar openshift (e os conceitos de container, devops, PaaS)',
+									titulo:' Introducao Red Hat Passar pelo portifolio de MW e detalhar openshift (e os conceitos de container, devops, PaaS) - Elvis Rocha ',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
-						},
+						}/*,
 						{
 							titulo:'15:00 - 16:00',
 							eventos:[
 								{
-									titulo:'Huawei',
+									titulo:'',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
-						},
+						}*/,
 						{
 							titulo:'14:00 - 16:00',
 							eventos:[
 								{
-									titulo:'Dr. Luciano Leal - Energia solar',
+									titulo:'Energia solar - Dr. Luciano Leal',
 									cor: corPalestra,
-									local: ''
+									local: 'Anfiteatro'
 								}
 							]
 						},
@@ -290,17 +300,17 @@ export default {
 									cor: corOutro
 								}
 							]
-						},
+						}/*,
 						{
 							titulo:'16:30 - 18:00',
 							eventos:[
 								{
 									titulo:'Apresentação de projetos',
 									cor: corProjetos,
-									local: ''
+									local: 'Hall  do Auditorio'
 								}
 							]
-						},
+						}*/,
 						{
 							titulo:'18:30 - 19:00',
 							eventos:[
@@ -314,9 +324,9 @@ export default {
 							titulo:'19:00 - 19:40',
 							eventos:[
 								{
-									titulo:'Profº José Uniram - IEEE',
+									titulo:'IEEE - Prof. José Oniram ',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -324,9 +334,9 @@ export default {
 							titulo:'20:00 - 21:30',
 							eventos:[
 								{
-									titulo:'Prof° Me. Juan Sebastian Toquica - Arenas Retrofir de Robô Industrial',
+									titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						}
@@ -348,9 +358,9 @@ export default {
 							titulo:'09:00 - 10:00',
 							eventos:[
 								{
-									titulo:'Marco Reis - Big Data',
+									titulo:' Big Data - Marco Reis',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -358,9 +368,9 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Profº Daniel Saad - Estrutura de Dados Probabilísticas',
+									titulo:'Estrutura de Dados Probabilísticas - Prof. Daniel Saad',
 									cor: corPalestra,
-									local: ''
+									local: 'Auditorio'
 								}
 							]
 						},
@@ -368,7 +378,7 @@ export default {
 							titulo:'09:00 - 11:30',
 							eventos:[
 								{
-									titulo:'Prof. Eryc Construção de Foguete',
+									titulo:'Construção de Foguete - Prof. Eryc Leão ',
 									cor: corMinicurso,
 									local: ''
 								}
@@ -401,17 +411,17 @@ export default {
 									cor: corOutro
 								}
 							]
-						},
+						}/*,
 						{
 							titulo:'19:00 - 22:00',
 							eventos:[
 								{
-									titulo:'Prof° Cristiano Pereira',
+									titulo:'',
 									cor: corPalestra,
 									local: ''
 								}
 							]
-						}
+						}*/
 					]
 				}
 			],
@@ -433,7 +443,7 @@ export default {
 					cor: corProjetos+'--text'
 				},
 				{
-					texto:'Outro',
+					texto:'Outros',
 					cor: corOutro+'--text'
 				}
 			]
