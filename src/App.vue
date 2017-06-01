@@ -106,7 +106,7 @@
 		<!-- Barra superior -->
 		<v-toolbar fixed class="teal darken-2">
 			<v-toolbar-side-icon @click.native.stop="sidebar = !sidebar" light></v-toolbar-side-icon>
-			<v-toolbar-title>Semana de Ciência e Tecnologia 2017</v-toolbar-title>
+			<v-toolbar-title class="white--text">Semana de Ciência e Tecnologia 2017</v-toolbar-title>
 		</v-toolbar>
 
 		<main>
