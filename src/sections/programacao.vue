@@ -100,9 +100,9 @@ export default {
 							titulo:'09:00 - 10:00',
 							eventos:[
 								{
-									titulo:'Abertura e Homenagem ao Prof. Marcio',
+									titulo:'Abertura e Homenagem ao Marcio / IEEE - Lídia Ruanny Luiz Felipe',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: 'Anfiteatro'
 								}
 							]
 						},
@@ -110,19 +110,19 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Android',
+									titulo:'Lucas Campos - Android',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
 									titulo:'Dr. Rodrigo Leonard (Agência Espacial Brasileira) O Programa Espacial Brasileiro',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'Aguardando confirmação',
+									titulo:'Edson Rosa dos Santos Júnior A Interconexão e os riscos da era virtual com o advento do sequestro digital',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -139,29 +139,29 @@ export default {
 							titulo:'14:00 - 17:30',
 							eventos:[
 								{
-									titulo:'Android',
+									titulo:'Lucas Campos - Android',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									titulo:'Prof° Cristiano Pereira',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'"Prof° Didan Junqueira Ribeiro Arduino (titulo a comfirmar)"',
+									titulo:'Arthur Braga Vidal - Robótica Edubot',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'Montagem e controle de lego',
+									titulo:'Rodrigo Maia Iran Carlos Ribeiro - Montagem e controle de lego',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'Astronomia',
+									titulo:'Profº Frederico Jordão - Astronomia',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -187,19 +187,19 @@ export default {
 							titulo:'19:00 - 22:00',
 							eventos:[
 								{
-									titulo:'"Prof° Cristiano Pereira (titulo a confirmar)"',
+									titulo:'Prof° Cristiano Pereira',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
 									titulo:'Iran Carlos Ribeiro Prof° Rodrigo Maia Montagem e controle de lego',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
-									titulo:'Astronomia',
+									titulo:'Profº Frederico Jordão - Clube de Astronomia',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						}
@@ -221,9 +221,9 @@ export default {
 							titulo:'09:00 - 10:30',
 							eventos:[
 								{
-									titulo:'Roda de licenciatura (Título a confirmar) Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
+									titulo:'Formação docente : experiência e concepção sobre o ensino de Física e Computação - Prof°Cauê Zaghetto, Prof° Demetrius dos Santos Leão, Prof° Felipe de Lemos Cabral, ProfªMaria de Fátima Ramos Brandão',
 									cor: corRodaConversa,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -233,12 +233,12 @@ export default {
 								{
 									titulo:'Dr. Luiz Ribeiro Física Computacional',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								},
 								{
 									titulo:'Gustavo A. Angelim Morais (IBM) Computação Cognitiva',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -248,7 +248,7 @@ export default {
 								{
 									titulo:'Intervalo de Almoço',
 									cor: corOutro,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -256,9 +256,9 @@ export default {
 							titulo:'14:00 - 15:00',
 							eventos:[
 								{
-									titulo:'Red Hat ou IBM (A confimar)',
+									titulo:'Elvis Rocha - Introducao Red Hat Passar pelo portifolio de MW e detalhar openshift (e os conceitos de container, devops, PaaS)',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -268,7 +268,7 @@ export default {
 								{
 									titulo:'Huawei',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -276,9 +276,9 @@ export default {
 							titulo:'14:00 - 16:00',
 							eventos:[
 								{
-									titulo:'Dr. Luciano Leal Energia solar',
+									titulo:'Dr. Luciano Leal - Energia solar',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -297,7 +297,7 @@ export default {
 								{
 									titulo:'Apresentação de projetos',
 									cor: corProjetos,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -311,22 +311,22 @@ export default {
 							]
 						},
 						{
-							titulo:'19:00 - 20:00',
+							titulo:'19:00 - 19:40',
 							eventos:[
 								{
-									titulo:'Palestra Automação',
+									titulo:'Profº José Uniram - IEEE',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
 						{
-							titulo:'20:00 - 22:00',
+							titulo:'20:00 - 21:30',
 							eventos:[
 								{
-									titulo:'Palestras de Encerramento',
+									titulo:'Prof° Me. Juan Sebastian Toquica - Arenas Retrofir de Robô Industrial',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						}
@@ -348,9 +348,9 @@ export default {
 							titulo:'09:00 - 10:00',
 							eventos:[
 								{
-									titulo:'Jose Gonçalo (Titulo a confirmar)',
+									titulo:'Marco Reis - Big Data',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -358,9 +358,9 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Daniel Saad (Titulo a confirmar)',
+									titulo:'Profº Daniel Saad - Estrutura de Dados Probabilísticas',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -370,7 +370,7 @@ export default {
 								{
 									titulo:'Prof. Eryc Construção de Foguete',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -387,9 +387,9 @@ export default {
 							titulo:'14:00 - 17:30',
 							eventos:[
 								{
-									titulo:'Anderson Ferreira Catarina Melo Dermevaldo Dias Raquel Passos Algoritime-se (Oficina de Introdução a Algoritmos)',
+									titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
 									cor: corMinicurso,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						},
@@ -406,9 +406,9 @@ export default {
 							titulo:'19:00 - 22:00',
 							eventos:[
 								{
-									titulo:'Prof° Cristiano Pereira (Titulo a confirmar)',
+									titulo:'Prof° Cristiano Pereira',
 									cor: corPalestra,
-									local: 'Local a confirmar'
+									local: ''
 								}
 							]
 						}
