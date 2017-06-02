@@ -31,14 +31,9 @@
 				</v-card-text>
 			</v-card-row>
 			<v-card-row actions class="indigo darken-2">
-				<v-layout row-sm column child-flex-sm class="ml-2 mr-2">
-					<v-btn flat class="white--text" @click.native="openUrl('http://www.sbpcnet.org.br/portoseguro/arquivos/modelo_resumo.doc');">
-						<v-icon left light>file_download</v-icon> Modelo de resumo
-					</v-btn>
-					<v-btn flat class="white--text" @click.native="openUrl('https://goo.gl/forms/dZX9MeVqKZWadofj1');">
-						<v-icon left light>assignment</v-icon> Inscrever Projeto
-					</v-btn>
-				</v-layout>
+				<v-btn flat class="white--text" @click.native="openUrl('https://goo.gl/hdl6aK');">
+					<v-icon left light>assignment</v-icon> Inscrever Projeto
+				</v-btn>
 			</v-card-row>
 		</v-card-column>
 	</v-card>
