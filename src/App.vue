@@ -1,6 +1,6 @@
 <template>
 	<v-app class="grey lighten-4">
-		<v-navigation-drawer persistent v-model="sidebar" dark :mini-variant.sync="mini">
+		<v-navigation-drawer persistent v-model="sidebar" dark>
 			<v-list>
 				<v-list-item>
 					<v-list-tile avatar tag="div">
@@ -10,11 +10,6 @@
 						<v-list-tile-content>
 							<v-list-tile-title>SC&T</v-list-tile-title>
 						</v-list-tile-content>
-						<v-list-tile-action>
-							<v-btn icon @click.native.stop="mini = !mini" light>
-								<v-icon>chevron_left</v-icon>
-							</v-btn>
-						</v-list-tile-action>
 					</v-list-tile>
 				</v-list-item>
 			</v-list>
@@ -100,6 +95,16 @@
 						</v-list-tile-content>
 					</v-list-tile>
 				</v-list-item>
+				<v-list-item @click="scrollTo('#organizacao')">
+					<v-list-tile ripple>
+						<v-list-tile-avatar>
+							<v-icon light>contact_phone</v-icon>
+						</v-list-tile-avatar>
+						<v-list-tile-content>
+							<v-list-tile-title>Organizacao</v-list-tile-title>
+						</v-list-tile-content>
+					</v-list-tile>
+				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
 
@@ -125,27 +130,39 @@
 </template>
 
 <script>
-	import $ from 'jquery'
-	export default {
-		data(){
-			return {
-				sidebar: true,
-				mini: false
-			}
-		},
-		methods: {
-			scrollTo(selector){
-				$('html, body').animate({
-					scrollTop: $(selector).offset().top - 78
-				});
-				if(innerWidth < 992){
-					this.sidebar = false;
-				}
+import $ from 'jquery'
+export default {
+	data(){
+		return {
+			sidebar: true
+		}
+	},
+	methods: {
+		scrollTo(selector){
+			$('html, body').animate({
+				scrollTop: $(selector).offset().top - 78
+			});
+			if(innerWidth < 992){
+				this.sidebar = false;
 			}
 		}
 	}
+}
 </script>
 
 <style lang="stylus">
-	@import '../node_modules/vuetify/src/stylus/main'
+@import '../node_modules/vuetify/src/stylus/settings/_colors'
+
+$theme := {
+	primary: $teal.darken-1
+	primary-dark: $teal.darken-2
+	accent: $blue.darken-1
+	secondary: $blue.darken-1
+	info: $blue.lighten-1
+	warning: $amber.darken-2
+	error: $red.accent-4
+	success: $green.lighten-2
+}
+
+@import '../node_modules/vuetify/src/stylus/main'
 </style>
