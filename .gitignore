@@ -3,3 +3,4 @@ yarn.lock
 npm-debug.log
 package-lock.json
 release/www
+release.zip
