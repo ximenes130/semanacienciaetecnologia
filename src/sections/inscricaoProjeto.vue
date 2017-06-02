@@ -35,7 +35,7 @@
 					<v-btn flat class="white--text" @click.native="openUrl('http://www.sbpcnet.org.br/portoseguro/arquivos/modelo_resumo.doc');">
 						<v-icon left light>file_download</v-icon> Modelo de resumo
 					</v-btn>
-					<v-btn flat class="white--text" v-tooltip:top="{ html: 'Inscrições Fechadas' }"><!--@click.native="openUrl('https://goo.gl/forms/dZX9MeVqKZWadofj1@click.native=');"-->
+					<v-btn flat class="white--text" @click.native="openUrl('https://goo.gl/forms/dZX9MeVqKZWadofj1');">
 						<v-icon left light>assignment</v-icon> Inscrever Projeto
 					</v-btn>
 				</v-layout>
