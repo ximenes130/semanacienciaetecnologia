@@ -1,17 +1,22 @@
 <template>
 	<v-card horizontal class="mt-4">
-		<v-card-column class="amber darken-1 white--text">
-			<v-card-row class="teal white--text">
-				<v-card-text>
-					<strong class="title">Inscrições Abertas</strong>
+		<v-card-column>
+			<v-card-row class="primary">
+				<v-card-title>
+					<span class="white--text">Inscrições </span>
+				</v-card-title>
+			</v-card-row>
+			<v-card-row>
+				<v-card-text class="pb-0">
+					<strong class="title"></strong>
 					<div>Aproveite e se inscreva-se agora para garantir seu certificado</div>
+					<br/><v-divider></v-divider>
 				</v-card-text>
 			</v-card-row>
-			<v-card-row actions class="teal darken-2">
-				<v-spacer></v-spacer>
+			<v-card-row>
 				<v-dialog  fullscreen transition="v-dialog-bottom-transition" :overlay="false" v-model="dinscricao">
-					<v-btn flat class="white--text" slot="activator">
-						<v-icon left light>assignment_ind</v-icon>inscrever-se
+					<v-btn flat class="secondary--text" slot="activator">
+						<v-icon left class="secondary--text">assignment_ind</v-icon>inscrever-se
 					</v-btn>
 					<v-card>
 						<v-card-row>
@@ -32,19 +37,19 @@
 </template>
 
 <script>
-	export default {
-		data(){
-			return {
-				dinscricao: false
-			}
+export default {
+	data(){
+		return {
+			dinscricao: false
 		}
-	};
+	}
+};
 </script>
 
 <style>
-	#iframe-inscricao {
-		width: 100%;
-		height: calc(100vh - 56px);
-		border: none;
-	}
+#iframe-inscricao {
+	width: 100%;
+	height: calc(100vh - 56px);
+	border: none;
+}
 </style>

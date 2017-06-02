@@ -1,6 +1,6 @@
 <template>
 	<v-card class="mt-4">
-		<v-card-row class="indigo darken-3">
+		<v-card-row class="primary-dark lighten-2">
 			<v-card-title>
 				<span class="white--text">Mapa do campus</span>
 			</v-card-title>
@@ -8,9 +8,9 @@
 		<v-card-row>
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content class="indigo white--text elevation-0" v-for="(mapa,index) in mapas" :key="index">
-					<div slot="header" class="white--text elevation-0"> {{mapa.titulo}}</div>
-					<v-card class="pt-2 pb-2 indigo lighten-3">
+				<v-expansion-panel-content class="primary white--text elevation-0" v-for="(mapa,index) in mapas" :key="index">
+					<div slot="header" class="primary white--text elevation-0"> {{mapa.titulo}}</div>
+					<v-card class="pt-2 pb-2">
 						<img :src="mapa.imagem"  class="mapa-img">
 					</v-card>
 				</v-expansion-panel-content>

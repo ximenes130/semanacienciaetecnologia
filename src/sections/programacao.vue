@@ -11,8 +11,8 @@
 		<v-card-row>
 			<v-spacer ></v-spacer>
 			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content  class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
-					<div slot="header" class="white--text">{{dia.titulo}}</div>
+				<v-expansion-panel-content ripple class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a" @click.native="scrollTo('#programacao')">
+					<div slot="header" class="white--text" :id="'cronograma-dia-'+a">{{dia.titulo}}</div>
 					<v-card v-for="(horario, b) in dia.horarios" :key="b">
 						<v-card-text :class="((b % 2 == 0) ? 'teal darken-4' : 'teal darken-3') + ' text-xs-center white--text'">
 							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
@@ -71,17 +71,14 @@ export default {
 			$('html, body').animate({
 				scrollTop: $(selector).offset().top - 78
 			});
-			if(innerWidth < 992){
-				this.sidebar = false;
-			}
 		}
 	},
 	data(){
-		var corPalestra = 'teal'
-		var corMinicurso = 'blue-grey'
-		var corRodaConversa = 'brown'
-		var corProjetos = 'deep-purple'
-		var corOutro = 'red'
+		let corPalestra = 'teal'
+		let corMinicurso = 'blue-grey'
+		let corRodaConversa = 'brown'
+		let corProjetos = 'deep-purple'
+		let corOutro = 'red'
 		return {
 			dias: [
 				{
@@ -100,7 +97,7 @@ export default {
 							titulo:'09:00 - 09:20',
 							eventos:[
 								{
-									titulo:'Abertura e Homenagem ao Marcio',
+									titulo:'Abertura e Homenagem ao Prof. Dr. Marcio Augusto de Deus',
 									cor: corPalestra,
 									local: 'Auditorio'
 								}
@@ -122,7 +119,7 @@ export default {
 								{
 									titulo:'Android: Começando do Zero - Lucas Campos',
 									cor: corMinicurso,
-									local: 'Laboratorio 15'
+									local: 'B1-12'
 								},
 								{
 									titulo:'O Programa Espacial Brasileiro - Dr. Rodrigo Leonard (Agência Espacial Brasileira)',
@@ -151,27 +148,32 @@ export default {
 								{
 									titulo:'Android: Começando do Zero - Lucas Campos',
 									cor: corMinicurso,
-									local: 'Laboratorio 15'
+									local: 'B1-12'
 								},
 								{
 									titulo:'Contando histórias e Ensinando Matemática: Uma Introdução a Teoria dos Grafos - Prof° Cristiano Pereira',
 									cor: corMinicurso,
-									local: ''
+									local: 'B1-5'
 								},
 								{
-									titulo:'Edubot: Robótica para Educação - Arthur Braga Vidal',
+									titulo:'EduBOT: Robótica para Educação - Arthur Braga Vidal',
 									cor: corMinicurso,
-									local: ''
+									local: 'B1-11'
 								},
 								{
-									titulo:'Montagem e controle de lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
+									titulo:'Montagem e Controle de Lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
 									cor: corMinicurso,
-									local: ''
+									local: 'BT-12'
 								},
 								{
-									titulo:'Astronomia - Prof. Frederico Jordão',
+									titulo:'Modelagem Matemática em Mecânica Usando Sotware Modellus - Prof. Tiago Castro',
 									cor: corMinicurso,
-									local: ''
+									local: 'A1-7'
+								},
+								{
+									titulo:'Construção de Mini Planetário - Prof. Frederico Jordão, Pedro Emanuel, Lucas Aleixo e Ronilson Pires',
+									cor: corMinicurso,
+									local: 'B1-1'
 								}
 							]
 						},
@@ -199,15 +201,15 @@ export default {
 								{
 									titulo:'MatLab: Fundamentos - Prof. Cristiano Pereira da Silva',
 									cor: corMinicurso,
-									local: ''
+									local: 'B1-11'
 								},
 								{
-									titulo:'Montagem e controle de lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
+									titulo:'Montagem e Controle de Lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
 									cor: corMinicurso,
-									local: ''
+									local: 'BT-12'
 								},
 								{
-									titulo:'Clube de Astronomia - Prof. Frederico Jordão',
+									titulo:'Observação do Céu Com o Uso de Telescópios- Prof. Frederico Jordão',
 									cor: corMinicurso,
 									local: ''
 								}
@@ -273,181 +275,181 @@ export default {
 							]
 						}/*,
 						{
-							titulo:'15:00 - 16:00',
-							eventos:[
-								{
-									titulo:'',
-									cor: corPalestra,
-									local: 'Auditorio'
-								}
-							]
-						}*/,
+						titulo:'15:00 - 16:00',
+						eventos:[
 						{
-							titulo:'14:00 - 16:00',
-							eventos:[
-								{
-									titulo:'Energia solar - Dr. Luciano Leal',
-									cor: corPalestra,
-									local: 'Anfiteatro'
-								}
-							]
-						},
-						{
-							titulo:'16:00 - 16:30',
-							eventos:[
-								{
-									titulo:'Intervalo',
-									cor: corOutro
-								}
-							]
-						}/*,
-						{
-							titulo:'16:30 - 18:00',
-							eventos:[
-								{
-									titulo:'Apresentação de projetos',
-									cor: corProjetos,
-									local: 'Hall  do Auditorio'
-								}
-							]
-						}*/,
-						{
-							titulo:'18:30 - 19:00',
-							eventos:[
-								{
-									titulo:'Credenciamento',
-									cor: corOutro
-								}
-							]
-						},
-						{
-							titulo:'19:00 - 19:40',
-							eventos:[
-								{
-									titulo:'IEEE - Prof. José Oniram ',
-									cor: corPalestra,
-									local: 'Auditorio'
-								}
-							]
-						},
-						{
-							titulo:'20:00 - 21:30',
-							eventos:[
-								{
-									titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
-									cor: corPalestra,
-									local: 'Auditorio'
-								}
-							]
-						}
-					]
-				},
-				{
-					titulo:'14/06 - Quarta',
-					horarios:[
-						{
-							titulo:'08:30 - 09:00',
-							eventos:[
-								{
-									titulo:'Credenciamento',
-									cor: corOutro
-								}
-							]
-						},
-						{
-							titulo:'09:00 - 10:00',
-							eventos:[
-								{
-									titulo:' Big Data - Marco Reis',
-									cor: corPalestra,
-									local: 'Auditorio'
-								}
-							]
-						},
-						{
-							titulo:'10:30 - 11:30',
-							eventos:[
-								{
-									titulo:'Estrutura de Dados Probabilísticas - Prof. Daniel Saad',
-									cor: corPalestra,
-									local: 'Auditorio'
-								}
-							]
-						},
-						{
-							titulo:'09:00 - 11:30',
-							eventos:[
-								{
-									titulo:'Construção de Foguete - Prof. Eryc Leão ',
-									cor: corMinicurso,
-									local: ''
-								}
-							]
-						},
-						{
-							titulo:'11:30 - 14:00',
-							eventos:[
-								{
-									titulo:'Intervalo de Almoço',
-									cor: corOutro
-								}
-							]
-						},
-						{
-							titulo:'14:00 - 17:30',
-							eventos:[
-								{
-									titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
-									cor: corMinicurso,
-									local: ''
-								}
-							]
-						},
-						{
-							titulo:'18:30 - 19:00',
-							eventos:[
-								{
-									titulo:'Credenciamento',
-									cor: corOutro
-								}
-							]
-						}/*,
-						{
-							titulo:'19:00 - 22:00',
-							eventos:[
-								{
-									titulo:'',
-									cor: corPalestra,
-									local: ''
-								}
-							]
-						}*/
-					]
-				}
-			],
-			legendas: [
-				{
-					texto:'Palestras',
-					cor: corPalestra+'--text'
-				},
-				{
-					texto:'Minicursos',
-					cor: corMinicurso+'--text'
-				},
-				{
-					texto:'Roda de conversa',
-					cor: corRodaConversa+'--text'
-				},
-				{
-					texto:'Projetos',
-					cor: corProjetos+'--text'
-				},
-				{
-					texto:'Outros',
-					cor: corOutro+'--text'
-				}
-			]
+						titulo:'',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			}*/,
+			{
+				titulo:'14:00 - 16:00',
+				eventos:[
+					{
+						titulo:'Energia solar - Dr. Luciano Leal',
+						cor: corPalestra,
+						local: 'Anfiteatro'
+					}
+				]
+			},
+			{
+				titulo:'16:00 - 16:30',
+				eventos:[
+					{
+						titulo:'Intervalo',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'16:30 - 18:00',
+				eventos:[
+					{
+						titulo:'Apresentação de projetos',
+						cor: corProjetos,
+						local: 'Hall  do Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'18:30 - 19:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'19:00 - 19:40',
+				eventos:[
+					{
+						titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'20:00 - 21:30',
+				eventos:[
+					{
+						titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			}
+		]
+	},
+	{
+		titulo:'14/06 - Quarta',
+		horarios:[
+			{
+				titulo:'08:30 - 09:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'09:00 - 10:00',
+				eventos:[
+					{
+						titulo:' Big Data - Marco Reis',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'10:30 - 11:30',
+				eventos:[
+					{
+						titulo:'Estrutura de Dados Probabilísticas - Prof. Daniel Saad',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'09:00 - 11:30',
+				eventos:[
+					{
+						titulo:'Construção de Foguetes - Prof. Eryc Leão ',
+						cor: corMinicurso,
+						local: 'BT-12'
+					}
+				]
+			},
+			{
+				titulo:'11:30 - 14:00',
+				eventos:[
+					{
+						titulo:'Intervalo de Almoço',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'14:00 - 17:30',
+				eventos:[
+					{
+						titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
+						cor: corMinicurso,
+						local: ''
+					}
+				]
+			},
+			{
+				titulo:'18:30 - 19:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			}/*,
+			{
+			titulo:'19:00 - 22:00',
+			eventos:[
+			{
+			titulo:'',
+			cor: corPalestra,
+			local: ''
 		}
+	]
+}*/
+]
+}
+],
+legendas: [
+	{
+		texto:'Palestras',
+		cor: corPalestra+'--text'
+	},
+	{
+		texto:'Minicursos',
+		cor: corMinicurso+'--text'
+	},
+	{
+		texto:'Roda de conversa',
+		cor: corRodaConversa+'--text'
+	},
+	{
+		texto:'Projetos',
+		cor: corProjetos+'--text'
+	},
+	{
+		texto:'Outros',
+		cor: corOutro+'--text'
 	}
+]
+}
+}
 };
 </script>

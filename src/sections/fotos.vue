@@ -1,6 +1,6 @@
 <template>
 	<v-card class="mt-4">
-		<v-card-row class="indigo">
+		<v-card-row class="primary">
 			<v-card-title>
 				<span class="white--text">Fotos do Evento</span>
 			</v-card-title>
