@@ -1,7 +1,7 @@
 ><template>
 	<v-app class="grey lighten-4">
 		<v-navigation-drawer persistent v-model="sidebar" light class="elevation-10">
-			<v-list class="teal lighten-5">
+			<v-list>
 				<v-list-item>
 					<v-list-tile avatar tag="div">
 						<v-list-tile-avatar>
@@ -155,6 +155,7 @@ export default {
 
 $theme := {
 	primary: $teal.darken-1
+	primary-dark: $teal.darken-3
 	accent: $blue.darken-1
 	secondary: $blue.darken-1
 	info: $blue.lighten-1
