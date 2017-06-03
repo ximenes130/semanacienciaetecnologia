@@ -1,7 +1,7 @@
-<template>
+><template>
 	<v-app class="grey lighten-4">
-		<v-navigation-drawer persistent v-model="sidebar" dark>
-			<v-list>
+		<v-navigation-drawer persistent v-model="sidebar" light class="elevation-10">
+			<v-list class="teal lighten-5">
 				<v-list-item>
 					<v-list-tile avatar tag="div">
 						<v-list-tile-avatar>
@@ -13,12 +13,12 @@
 					</v-list-tile>
 				</v-list-item>
 			</v-list>
-			<v-divider light></v-divider>
+			<v-divider></v-divider>
 			<v-list dense>
 				<v-list-item @click="scrollTo('#sobre')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>info</v-icon>
+							<v-icon>info</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Sobre</v-list-tile-title>
@@ -28,7 +28,7 @@
 				<v-list-item @click="scrollTo('#campus-endereco')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>directions</v-icon>
+							<v-icon>directions</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Endereço</v-list-tile-title>
@@ -38,7 +38,7 @@
 				<v-list-item @click="scrollTo('#inscricao')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>assignment_ind</v-icon>
+							<v-icon>assignment_ind</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Inscrições</v-list-tile-title>
@@ -48,7 +48,7 @@
 				<v-list-item @click="scrollTo('#inscricaoProjeto')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>assignment</v-icon>
+							<v-icon>assignment</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Inscrição de Projetos</v-list-tile-title>
@@ -58,7 +58,7 @@
 				<v-list-item @click="scrollTo('#campus-mapa')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>location_on</v-icon>
+							<v-icon>location_on</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Mapa do Campus</v-list-tile-title>
@@ -68,7 +68,7 @@
 				<v-list-item @click="scrollTo('#programacao')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>schedule</v-icon>
+							<v-icon>schedule</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Cronograma</v-list-tile-title>
@@ -78,7 +78,7 @@
 				<v-list-item @click="scrollTo('#fotos')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>photo_camera</v-icon>
+							<v-icon>photo_camera</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Fotos</v-list-tile-title>
@@ -88,7 +88,7 @@
 				<v-list-item @click="scrollTo('#contato')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>contact_phone</v-icon>
+							<v-icon>contact_phone</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Contato</v-list-tile-title>
@@ -98,7 +98,7 @@
 				<v-list-item @click="scrollTo('#organizacao')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<v-icon light>contact_phone</v-icon>
+							<v-icon>contact_phone</v-icon>
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Organizacao</v-list-tile-title>
@@ -155,7 +155,6 @@ export default {
 
 $theme := {
 	primary: $teal.darken-1
-	primary-dark: $teal.darken-2
 	accent: $blue.darken-1
 	secondary: $blue.darken-1
 	info: $blue.lighten-1
