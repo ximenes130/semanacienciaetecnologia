@@ -15,11 +15,11 @@
 						requisitos:
 					</div>
 					<v-list>
-						<v-list-title><v-list-tile>Área de conhecimento: Ciências Exatas e da Terra</v-list-tile></v-list-title>
-						<v-list-item><v-list-tile>Possuir protótipo ou banner impresso no momento de inscrição</v-list-tile></v-list-item>
-						<v-list-item><v-list-tile>Possuir disponibilidade para apresentar seu projeto no dia <strong>13/06/2017</strong> ás 16:30</v-list-tile></v-list-item>
-						<v-list-item><v-list-tile>A pesquisa deverá estar em andamento ou finalizada</v-list-tile></v-list-item>
-						<v-list-item><v-list-tile>Submeter resumo com no mínimo 100 e máximo de 200 palavras</v-list-tile></v-list-item>
+						<v-list-title><v-list-tile><p>Área de conhecimento: Ciências Exatas e da Terra</p></v-list-tile></v-list-title>
+						<v-list-item><v-list-tile><p>Possuir protótipo ou banner impresso no momento de inscrição</p></v-list-tile></v-list-item>
+						<v-list-item><v-list-tile><p>Possuir disponibilidade para apresentar seu projeto no dia <strong>13/06/2017</strong> ás 16:30</p></v-list-tile></v-list-item>
+						<v-list-item><v-list-tile><p>A pesquisa deverá estar em andamento ou finalizada</p></v-list-tile></v-list-item>
+						<v-list-item><v-list-tile><p>Submeter resumo com no mínimo 100 e máximo de 200 palavras</p></v-list-tile></v-list-item>
 					</v-list>
 					<v-divider></v-divider>
 				</v-card-text>
