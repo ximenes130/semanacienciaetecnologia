@@ -173,7 +173,7 @@ export default {
 								{
 									titulo:'Construção de Mini Planetário - Prof. Frederico Jordão, Pedro Emanuel, Lucas Aleixo e Ronilson Pires',
 									cor: corMinicurso,
-									local: 'B1-1'
+									local: 'BT-14'
 								}
 							]
 						},
@@ -380,7 +380,7 @@ export default {
 				titulo:'09:00 - 11:30',
 				eventos:[
 					{
-						titulo:'Construção de Foguetes - Prof. Eryc Leão ',
+						titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
 						cor: corMinicurso,
 						local: 'BT-12'
 					}

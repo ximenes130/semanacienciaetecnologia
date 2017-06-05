@@ -1,4 +1,4 @@
-><template>
+<template>
 	<v-app class="grey lighten-4">
 		<v-navigation-drawer persistent v-model="sidebar" light class="elevation-10">
 			<v-list>
