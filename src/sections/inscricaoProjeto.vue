@@ -15,7 +15,7 @@
 						requisitos:
 					</div>
 					<v-list>
-						<v-list-title><v-list-tile><p>Área de conhecimento: Ciências Exatas e da Terra</p></v-list-tile></v-list-title>
+						<v-list-item><v-list-tile><p>Área de conhecimento: Ciências Exatas e da Terra</p></v-list-tile></v-list-item>
 						<v-list-item><v-list-tile><p>Possuir protótipo ou banner impresso no momento de inscrição</p></v-list-tile></v-list-item>
 						<v-list-item><v-list-tile><p>Possuir disponibilidade para apresentar seu projeto no dia <strong>13/06/2017</strong> ás 16:30</p></v-list-tile></v-list-item>
 						<v-list-item><v-list-tile><p>A pesquisa deverá estar em andamento ou finalizada</p></v-list-tile></v-list-item>

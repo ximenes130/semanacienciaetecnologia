@@ -370,7 +370,7 @@ export default {
 				titulo:'10:30 - 11:30',
 				eventos:[
 					{
-						titulo:'Estrutura de Dados Probabilísticas - Prof. Daniel Saad',
+						titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
 						cor: corPalestra,
 						local: 'Auditorio'
 					}
