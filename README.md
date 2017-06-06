@@ -46,4 +46,4 @@ git push origin master
 npm run release
 ```
 
-### [Build pronto para deploy com Docker](https://github.com/ximenes130/semanacienciaetecnologia/releases/tag/1.0)
+### [Build pronto para deploy com Docker](https://github.com/ximenes130/semanacienciaetecnologia/releases)
