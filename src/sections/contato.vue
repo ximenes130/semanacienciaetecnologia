@@ -40,7 +40,7 @@
 				<v-list-item @click="openUrl('https://www.facebook.com/semanacienciaetecnologia/')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<img src="img/social/facebook.png">
+							<img src="img/social/facebook.svg">
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Facebook</v-list-tile-title>
@@ -50,7 +50,7 @@
 				<v-list-item @click="openUrl('https://twitter.com/sctifb')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
-							<img src="img/social/twitter.png">
+							<img src="img/social/twitter.svg">
 						</v-list-tile-avatar>
 						<v-list-tile-content>
 							<v-list-tile-title>Twitter</v-list-tile-title>
