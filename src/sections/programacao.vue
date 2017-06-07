@@ -6,16 +6,33 @@
 			</v-card-title>
 		</v-card-row>
 
+		<!-- Legendas -->
+
+		<v-card-text>
+			<v-list dense>
+				<v-list-item v-for="(legenda,index) in legendas" :key="index">
+					<v-list-tile tag="div">
+						<v-list-tile-avatar>
+							<v-icon :class="legenda.cor">fiber_manual_record</v-icon>
+						</v-list-tile-avatar>
+						<v-list-tile-content>
+							<v-list-tile-title>{{legenda.texto}}</v-list-tile-title>
+						</v-list-tile-content>
+					</v-list-tile>
+				</v-list-item>
+			</v-list>
+		</v-card-text>
+
 		<!-- Programação -->
 
 		<v-card-row>
 			<v-spacer ></v-spacer>
-			<v-expansion-panel class="elevation-0">
-				<v-expansion-panel-content ripple class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a" @click.native="scrollTo('#programacao')">
+			<v-expansion-panel class="elevation-0" expand>
+				<v-expansion-panel-content ripple class="teal elevation-0 body-2 white--text" v-for="(dia,a) in dias" :key="a">
 					<div slot="header" class="white--text" :id="'cronograma-dia-'+a">{{dia.titulo}}</div>
 					<v-card v-for="(horario, b) in dia.horarios" :key="b">
-						<v-card-text :class="((b % 2 == 0) ? 'teal darken-4' : 'teal darken-3') + ' text-xs-center white--text'">
-							<div class="teal--text text--lighten-4">{{horario.titulo}}</div>
+						<v-card-text :class="((b % 2 == 0) ? 'lighten-4' : 'lighten-5') + ' teal text-xs-center white--text'">
+							<div class="teal--text">{{horario.titulo}}</div>
 							<v-layout row-sm column child-flex-sm>
 								<v-card class="transparent pa-1" v-for="(evento,c) in horario.eventos" :key="c">
 									<v-card-row>
@@ -33,23 +50,6 @@
 			</v-expansion-panel>
 			<v-spacer></v-spacer>
 		</v-card-row>
-
-		<!-- Legendas -->
-
-		<v-card-text class="teal darken-2 white--text">
-			<v-list dense>
-				<v-list-item v-for="(legenda,index) in legendas" :key="index">
-					<v-list-tile tag="div">
-						<v-list-tile-avatar>
-							<v-icon :class="legenda.cor">fiber_manual_record</v-icon>
-						</v-list-tile-avatar>
-						<v-list-tile-content>
-							<v-list-tile-title class="white--text">{{legenda.texto}}</v-list-tile-title>
-						</v-list-tile-content>
-					</v-list-tile>
-				</v-list-item>
-			</v-list>
-		</v-card-text>
 	</v-card>
 </template>
 
@@ -64,15 +64,7 @@
 </style>
 
 <script>
-import $ from 'jquery'
 export default {
-	methods: {
-		scrollTo(selector){
-			$('html, body').animate({
-				scrollTop: $(selector).offset().top - 78
-			});
-		}
-	},
 	data(){
 		let corPalestra = 'teal'
 		let corMinicurso = 'blue-grey'
@@ -273,183 +265,173 @@ export default {
 									local: 'Auditorio'
 								}
 							]
-						}/*,
+						},
 						{
-						titulo:'15:00 - 16:00',
-						eventos:[
+							titulo:'14:00 - 16:00',
+							eventos:[
+								{
+									titulo:'Energia solar - Dr. Luciano Leal',
+									cor: corPalestra,
+									local: 'Anfiteatro'
+								}
+							]
+						},
 						{
-						titulo:'',
-						cor: corPalestra,
-						local: 'Auditorio'
-					}
-				]
-			}*/,
-			{
-				titulo:'14:00 - 16:00',
-				eventos:[
-					{
-						titulo:'Energia solar - Dr. Luciano Leal',
-						cor: corPalestra,
-						local: 'Anfiteatro'
-					}
-				]
-			},
-			{
-				titulo:'16:00 - 16:30',
-				eventos:[
-					{
-						titulo:'Intervalo',
-						cor: corOutro
-					}
-				]
-			},
-			{
-				titulo:'16:30 - 18:00',
-				eventos:[
-					{
-						titulo:'Apresentação de projetos',
-						cor: corProjetos,
-						local: 'Hall  do Auditorio'
-					}
-				]
-			},
-			{
-				titulo:'18:30 - 19:00',
-				eventos:[
-					{
-						titulo:'Credenciamento',
-						cor: corOutro
-					}
-				]
-			},
-			{
-				titulo:'19:00 - 19:40',
-				eventos:[
-					{
-						titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
-						cor: corPalestra,
-						local: 'Auditorio'
-					}
-				]
-			},
-			{
-				titulo:'20:00 - 21:30',
-				eventos:[
-					{
-						titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
-						cor: corPalestra,
-						local: 'Auditorio'
-					}
-				]
-			}
-		]
-	},
-	{
-		titulo:'14/06 - Quarta',
-		horarios:[
-			{
-				titulo:'08:30 - 09:00',
-				eventos:[
-					{
-						titulo:'Credenciamento',
-						cor: corOutro
-					}
-				]
-			},
-			{
-				titulo:'09:00 - 10:00',
-				eventos:[
-					{
-						titulo:' Big Data - Marco Reis',
-						cor: corPalestra,
-						local: 'Auditorio'
-					}
-				]
-			},
-			{
-				titulo:'10:30 - 11:30',
-				eventos:[
-					{
-						titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
-						cor: corPalestra,
-						local: 'Auditorio'
-					}
-				]
-			},
-			{
-				titulo:'09:00 - 11:30',
-				eventos:[
-					{
-						titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
-						cor: corMinicurso,
-						local: 'BT-12'
-					}
-				]
-			},
-			{
-				titulo:'11:30 - 14:00',
-				eventos:[
-					{
-						titulo:'Intervalo de Almoço',
-						cor: corOutro
-					}
-				]
-			},
-			{
-				titulo:'14:00 - 17:30',
-				eventos:[
-					{
-						titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
-						cor: corMinicurso,
-						local: ''
-					}
-				]
-			},
-			{
-				titulo:'18:30 - 19:00',
-				eventos:[
-					{
-						titulo:'Credenciamento',
-						cor: corOutro
-					}
-				]
-			},
-			{
-				titulo:'19:00 - 21:30',
-				eventos:[
-					{
-						titulo:'Matlab: programção - Prof° Cristiano Pereira',
-						cor: corPalestra,
-						local: ''
-					}
-				]
-			}
-		]
+							titulo:'16:00 - 16:30',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'16:30 - 18:00',
+							eventos:[
+								{
+									titulo:'Apresentação de projetos',
+									cor: corProjetos,
+									local: 'Hall  do Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 19:40',
+							eventos:[
+								{
+									titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'20:00 - 21:30',
+							eventos:[
+								{
+									titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						}
+					]
+				},
+				{
+					titulo:'14/06 - Quarta',
+					horarios:[
+						{
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 10:00',
+							eventos:[
+								{
+									titulo:' Big Data - Marco Reis',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'10:30 - 11:30',
+							eventos:[
+								{
+									titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'09:00 - 11:30',
+							eventos:[
+								{
+									titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
+									cor: corMinicurso,
+									local: 'BT-12'
+								}
+							]
+						},
+						{
+							titulo:'11:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
+									cor: corMinicurso,
+									local: ''
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 21:30',
+							eventos:[
+								{
+									titulo:'Matlab: programção - Prof° Cristiano Pereira',
+									cor: corPalestra,
+									local: ''
+								}
+							]
+						}
+					]
+				}
+			],
+			legendas: [
+				{
+					texto:'Palestras',
+					cor: corPalestra+'--text'
+				},
+				{
+					texto:'Minicursos',
+					cor: corMinicurso+'--text'
+				},
+				{
+					texto:'Roda de conversa',
+					cor: corRodaConversa+'--text'
+				},
+				{
+					texto:'Projetos',
+					cor: corProjetos+'--text'
+				},
+				{
+					texto:'Outros',
+					cor: corOutro+'--text'
+				}
+			]
+		}
 	}
-],
-legendas: [
-	{
-		texto:'Palestras',
-		cor: corPalestra+'--text'
-	},
-	{
-		texto:'Minicursos',
-		cor: corMinicurso+'--text'
-	},
-	{
-		texto:'Roda de conversa',
-		cor: corRodaConversa+'--text'
-	},
-	{
-		texto:'Projetos',
-		cor: corProjetos+'--text'
-	},
-	{
-		texto:'Outros',
-		cor: corOutro+'--text'
-	}
-]
 }
-}
-};
 </script>
