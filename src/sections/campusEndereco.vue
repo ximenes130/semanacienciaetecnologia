@@ -1,6 +1,6 @@
 <template>
 	<v-card horizontal class="mt-4">
-		<v-card-row img="img/cards/mapa.png" height="196px"></v-card-row>
+		<v-card-row img="img/cards/mapa.png" height="196px" class="hidden-xs-only"></v-card-row>
 		<v-card-column>
 			<v-card-row>
 				<v-card-title class="primary">

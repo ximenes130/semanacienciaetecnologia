@@ -32,7 +32,7 @@
 				</v-dialog>
 			</v-card-row>
 		</v-card-column>
-		<v-card-row img="img/cards/inscreva-se.jpg" height="175px"></v-card-row>
+		<v-card-row img="img/cards/inscreva-se.jpg" height="175px" class="hidden-xs-only"></v-card-row>
 	</v-card>
 </template>
 
