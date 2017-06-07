@@ -104,7 +104,7 @@ export default {
 					titulo:'MatLab - Fundamentos',
 					professor:'Prof. Cristiano Pereira da Silva',
 					horario:'(Seg)19:00-22:00',
-					descricao:''
+					descricao:'Será apresentado o Software MatLab e algumas de suas funções básicas seguidas de noções de programação.'
 				},
 				{
 					dialog: false,

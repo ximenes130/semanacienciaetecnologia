@@ -122,7 +122,7 @@ export default {
 									local: 'B1-12'
 								},
 								{
-									titulo:'O Programa Espacial Brasileiro - Dr. Rodrigo Leonard (Agência Espacial Brasileira)',
+									titulo:'O Programa Espacial Brasileiro - Dr. Rodrigo Leonardi (Agência Espacial Brasileira)',
 									cor: corPalestra,
 									local: 'Auditorio'
 								},
@@ -413,19 +413,19 @@ export default {
 						cor: corOutro
 					}
 				]
-			}/*,
+			},
 			{
-			titulo:'19:00 - 22:00',
-			eventos:[
-			{
-			titulo:'',
-			cor: corPalestra,
-			local: ''
-		}
-	]
-}*/
-]
-}
+				titulo:'19:00 - 21:30',
+				eventos:[
+					{
+						titulo:'Matlab: programção - Prof° Cristiano Pereira',
+						cor: corPalestra,
+						local: ''
+					}
+				]
+			}
+		]
+	}
 ],
 legendas: [
 	{
