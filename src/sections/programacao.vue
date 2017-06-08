@@ -235,7 +235,7 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Física Computacional - Dr. Luiz Ribeiro ',
+									titulo:'Laboratório de Fotobiorreatores: Estudo teórico e experimental dos processos respiratórios e fotossintéticos de microorganismos  - Prof. Dr. Luiz Roncaratti',
 									cor: corPalestra,
 									local: 'Anfiteatro'
 								},
@@ -277,6 +277,157 @@ export default {
 							]
 						},
 						{
+						titulo:'',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			}*/,
+			{
+				titulo:'14:00 - 16:00',
+				eventos:[
+					{
+						titulo:'Energia solar - Dr. Luciano Leal',
+						cor: corPalestra,
+						local: 'Anfiteatro'
+					}
+				]
+			},
+			{
+				titulo:'16:00 - 16:30',
+				eventos:[
+					{
+						titulo:'Intervalo',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'16:30 - 18:00',
+				eventos:[
+					{
+						titulo:'Apresentação de projetos',
+						cor: corProjetos,
+						local: 'Hall  do Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'18:30 - 19:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'19:00 - 19:40',
+				eventos:[
+					{
+						titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'20:00 - 21:30',
+				eventos:[
+					{
+						titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			}
+		]
+	},
+	{
+		titulo:'14/06 - Quarta',
+		horarios:[
+			{
+				titulo:'08:30 - 09:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'09:00 - 10:00',
+				eventos:[
+					{
+						titulo:' Big Data - Marco Reis',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'10:30 - 11:30',
+				eventos:[
+					{
+						titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
+						cor: corPalestra,
+						local: 'Auditorio'
+					}
+				]
+			},
+			{
+				titulo:'09:00 - 11:30',
+				eventos:[
+					{
+						titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
+						cor: corMinicurso,
+						local: 'BT-12'
+					}
+				]
+			},
+			{
+				titulo:'11:30 - 14:00',
+				eventos:[
+					{
+						titulo:'Intervalo de Almoço',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'14:00 - 17:30',
+				eventos:[
+					{
+						titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
+						cor: corMinicurso,
+						local: ''
+					}
+				]
+			},
+			{
+				titulo:'18:30 - 19:00',
+				eventos:[
+					{
+						titulo:'Credenciamento',
+						cor: corOutro
+					}
+				]
+			},
+			{
+				titulo:'19:00 - 21:30',
+				eventos:[
+					{
+						titulo:'Matlab: programção - Prof° Cristiano Pereira',
+						cor: corPalestra,
+						local: ''
+					}
+				]
+			}
+		]
+	}
+}
+</script>
+
 							titulo:'16:00 - 16:30',
 							eventos:[
 								{
@@ -431,7 +582,4 @@ export default {
 					cor: corOutro+'--text'
 				}
 			]
-		}
-	}
-}
-</script>
+		}
