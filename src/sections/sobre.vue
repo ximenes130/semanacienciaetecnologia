@@ -7,19 +7,25 @@
 				<v-spacer></v-spacer>
 			</v-card-row>
 		</v-parallax>
-		<v-card-text>
+		<v-card-row>
+			<img src="img/cards/ifb.jpg" class="hidden-md-and-up ifb-sm">
+		</v-card-row>
+		<v-card-row>
+			<img src="img/cards/ifb.jpg" class="hidden-sm-and-down">
+			<v-card-text>
 				<p><strong>Nos dias 12, 13 e 14 de junho</strong>, o  Instituto Federal de
-				Brasília (IFB) <em>campus</em> Taguatinga sediará a I Semana de
-				Ciência e Tecnologia (SC&T). Nessa oportunidade,  estudantes,
-				professores e pesquisadores discutirão  ideias sobres diversos temas
-				da Automação,  Física e Computação. Para isso, o evento reunirá
-				palestras, oficinas, workshops, rodas de conversas, exposições,
-				protótipos de produtos e muito mais.</p>
-		</v-card-text>
-	</v-card>
-</template>
+					Brasília (IFB) <em>campus</em> Taguatinga sediará a I Semana de
+					Ciência e Tecnologia (SC&T). Nessa oportunidade,  estudantes,
+					professores e pesquisadores discutirão  ideias sobres diversos temas
+					da Automação,  Física e Computação. Para isso, o evento reunirá
+					palestras, oficinas, workshops, rodas de conversas, exposições,
+					protótipos de produtos e muito mais.</p>
+				</v-card-text>
+			</v-card-row>
+		</v-card>
+	</template>
 
-<style>
+	<style>
 	.logo{
 		width: 500px;
 		max-width: calc(100% - 40px);
@@ -31,4 +37,7 @@
 	.parallax__content{
 		padding: 0 0 0 0;
 	}
-</style>
+	.ifb-sm{
+		max-width: 100%;
+	}
+	</style>
