@@ -7,6 +7,7 @@
 		<inscricao-projeto id="inscricaoProjeto"></inscricao-projeto>
 		<campus-mapa id="campus-mapa"></campus-mapa>
 		<programacao id="programacao"></programacao>
+		<palestrantes id="palestrantes"></palestrantes>
 		<fotos id="fotos"></fotos>
 		<contato id="contato"></contato>
 		<organizacao id="organizacao"></organizacao>

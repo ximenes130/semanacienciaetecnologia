@@ -25,7 +25,6 @@
 				</v-card-text>
 			</v-card-row>
 			<v-card-row>
-
 				<v-btn flat class="secondary--text" @click.native="openUrl('https://goo.gl/hdl6aK');">
 					<v-icon left class="secondary--text">assignment</v-icon> Inscrever Projeto
 				</v-btn>
@@ -37,11 +36,6 @@
 
 <script>
 export default {
-	methods: {
-		openUrl(url){
-			window.open(url, '_blank');
-		}
-	},
 	data(){
 		return{
 			innerWidth
