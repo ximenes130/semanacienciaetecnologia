@@ -22,13 +22,3 @@
 		</v-card-column>
 	</v-card>
 </template>
-
-<script>
-export default {
-	methods: {
-		openUrl(url){
-			window.open(url, '_blank');
-		}
-	}
-}
-</script>

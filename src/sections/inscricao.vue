@@ -29,11 +29,6 @@ export default {
 		return {
 			dinscricao: false
 		}
-	},
-	methods: {
-		openUrl(url){
-			window.open(url, '_blank');
-		}
 	}
 };
 </script>

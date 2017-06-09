@@ -63,11 +63,6 @@
 
 <script>
 export default {
-	methods: {
-		openUrl(url){
-			window.open(url, '_blank');
-		}
-	},
 	data(){
 		return {
 			minicursos: [
