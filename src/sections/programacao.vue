@@ -2,7 +2,7 @@
 	<v-card class="mt-4">
 		<v-card-row class="teal darken-3">
 			<v-card-title>
-				<span class="white--text">Cronograma</span>
+				<span class="white--text">Programação</span>
 			</v-card-title>
 		</v-card-row>
 
@@ -260,7 +260,7 @@ export default {
 							titulo:'14:00 - 15:00',
 							eventos:[
 								{
-									titulo:' Introducao Red Hat Passar pelo portifolio de MW e detalhar openshift (e os conceitos de container, devops, PaaS) - Elvis Rocha ',
+									titulo:' Introdução Red Hat Passar pelo portifolio de MW e detalhar openshift (e os conceitos de container, devops, PaaS) - Elvis Rocha ',
 									cor: corPalestra,
 									local: 'Auditorio'
 								}
@@ -417,7 +417,7 @@ export default {
 					titulo:'19:00 - 21:30',
 					eventos:[
 						{
-							titulo:'Matlab: programção - Prof° Cristiano Pereira',
+							titulo:'Matlab: programação - Prof° Cristiano Pereira',
 							cor: corPalestra,
 							local: ''
 						}
@@ -552,7 +552,7 @@ export default {
 			titulo:'19:00 - 21:30',
 			eventos:[
 				{
-					titulo:'Matlab: programção - Prof° Cristiano Pereira',
+					titulo:'Matlab: programação - Prof° Cristiano Pereira',
 					cor: corPalestra,
 					local: ''
 				}
