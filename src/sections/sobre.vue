@@ -7,8 +7,8 @@
 				<v-spacer></v-spacer>
 			</v-card-row>
 		</v-parallax>
-		<v-card-row>
-			<img src="img/cards/ifb.jpg" class="hidden-md-and-up ifb-sm">
+		<v-card-row class="hidden-md-and-up">
+			<img src="img/cards/ifb.jpg" class="ifb-sm">
 		</v-card-row>
 		<v-card-row>
 			<img src="img/cards/ifb.jpg" class="hidden-sm-and-down">
