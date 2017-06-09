@@ -46,4 +46,16 @@ git push origin master
 npm run release
 ```
 
+### Utilizando Docker
+
+- Baixe e extraia o último release
+- Para construir e atualizar a imagem da aplicação:
+```
+	sudo docker build -t sctnode:v0.1 .
+```
+- Para Iniciar o container:
+```
+	sudo docker run -d --name sctcontainer -p 8082:8082 sctnode:v0.1
+```
+
 ### [Build pronto para deploy com Docker](https://github.com/ximenes130/semanacienciaetecnologia/releases)
