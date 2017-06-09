@@ -131,7 +131,7 @@ export default {
 				},
 				{
 					dialog: false,
-					titulo:'Algoritime-se: Oficina de Introdução a Algoritmos ',
+					titulo:'Algoritme-se: Oficina de Introdução a Algoritmos ',
 					professor:'Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
 					horario:'(Qua)14:00-17:30',
 					descricao:''

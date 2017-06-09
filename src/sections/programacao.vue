@@ -398,7 +398,7 @@ export default {
 				titulo:'14:00 - 17:30',
 				eventos:[
 					{
-						titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
+						titulo:'Algoritme-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
 						cor: corMinicurso,
 						local: ''
 					}
