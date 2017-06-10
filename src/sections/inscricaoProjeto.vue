@@ -25,20 +25,27 @@
 				</v-card-text>
 			</v-card-row>
 			<v-card-row>
-				<v-btn flat class="secondary--text" @click.native="openUrl('https://goo.gl/hdl6aK');">
+				<v-btn flat class="secondary--text" v-tooltip:top="{ html: 'Inscrições Encerradas' }" @click.native="snackbar = true">
 					<v-icon left class="secondary--text">assignment</v-icon> Inscrever Projeto
 				</v-btn>
 			</v-card-row>
 		</v-card-column>
 		<v-card-row img="img/cards/projeto.jpg" class="hidden-xs-only" height="500px"></v-card-row>
+		<v-snackbar :timeout="timeout" v-model="snackbar">{{ text }}<v-btn light flat @click.native="snackbar = false">Fechar</v-btn></v-snackbar>
 	</v-card>
+
 </template>
 
 <script>
 export default {
 	data(){
 		return{
-			innerWidth
+			innerWidth,
+			snackbar: false,
+			context: 'error',
+			mode: '',
+			timeout: 6000,
+			text: 'Inscrições Encerradas'
 		}
 	}
 }
