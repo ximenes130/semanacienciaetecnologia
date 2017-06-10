@@ -50,6 +50,7 @@
 			</v-expansion-panel>
 			<v-spacer></v-spacer>
 		</v-card-row>
+
 	</v-card>
 </template>
 
