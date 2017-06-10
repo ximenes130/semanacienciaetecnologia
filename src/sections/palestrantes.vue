@@ -42,26 +42,26 @@ export default {
 			palestrantes:[
 				{
 					nome: 'Luiz Roncaratti',
-					local: '',
-					area: '',
+					local: 'UnB, Università degli Studi di Perugia',
+					area: 'Instituto de Física (UnB)',
 					lattes:'http://lattes.cnpq.br/0859908961302295'
 				},
 				{
 					nome: 'Luciano Leal',
-					local: '',
-					area: '',
+					local: 'UnB',
+					area: 'Colégio Militar de Brasília',
 					lattes:'http://lattes.cnpq.br/0115599236292361'
 				},
 				{
 					nome: 'Rodrigo Leonardi',
-					local: '',
-					area: '',
+					local: 'University of California, INPE, UnB',
+					area: 'Agência Espacial Brasileira',
 					lattes:'http://lattes.cnpq.br/4061600030396747'
 				},
 				{
 					nome: 'Gustavo Morais',
-					local: '',
-					area: '',
+					local: 'unicap, Uni. Estácio de Sá',
+					area: 'IBM',
 					lattes:'https://br.linkedin.com/in/gustavoamorais'
 				},
 				{
