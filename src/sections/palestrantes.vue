@@ -1,5 +1,5 @@
 <template>
-	<v-card class="mt-4 grey lighten-3">
+	<v-card class="mt-4 teal lighten-5">
 		<v-card-row class="primary darken-1">
 			<v-card-title>
 				<span class="white--text">Palestrantes</span>
