@@ -373,7 +373,7 @@ export default {
 							titulo:'11:00 - 11:30',
 							eventos:[
 								{
-									titulo:'Estrutura de Dados sucinta - Prof. Daniel Saad',
+									titulo:'Estrutura de Dados Sucinta - Prof. Daniel Saad',
 									cor: corPalestra,
 									local: 'Auditorio'
 								}
