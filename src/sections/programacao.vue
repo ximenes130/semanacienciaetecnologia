@@ -226,7 +226,7 @@ export default {
 							titulo:'09:00 - 10:30',
 							eventos:[
 								{
-									titulo:'Formação docente: experiência e concepção sobre o ensino de Física e Computação - Prof.Cauê Zaghetto, Prof. Demetrius dos Santos Leão, Prof. Felipe Cabral, Prof.Maria de Fátima Ramos Brandão, Prof. Eric Leão',
+									titulo:'Formação docente: experiências e concepções sobre o ensino de Física e Computação - Prof.Cauê Zaghetto, Prof. Demetrius dos Santos Leão, Prof. Felipe Cabral, Prof.Maria de Fátima Ramos Brandão, Prof. Eryc Leão',
 									cor: corRodaConversa,
 									local: 'Auditorio'
 								}
