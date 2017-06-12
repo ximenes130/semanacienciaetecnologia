@@ -87,7 +87,7 @@ export default {
 							]
 						},
 						{
-							titulo:'09:00 - 09:20',
+							titulo:'09:00 - 09:30',
 							eventos:[
 								{
 									titulo:'Abertura e Homenagem ao Prof. Dr. Marcio Augusto de Deus',
@@ -97,7 +97,7 @@ export default {
 							]
 						},
 						{
-							titulo:'09:20 - 10:00',
+							titulo:'09:30 - 10:00',
 							eventos:[
 								{
 									titulo:"IEEE - Lídia Ruanny e Luiz Felipe",
@@ -112,7 +112,7 @@ export default {
 								{
 									titulo:'Android: Começando do Zero - Lucas Campos',
 									cor: corMinicurso,
-									local: 'B1-12'
+									local: 'B1-16'
 								},
 								{
 									titulo:'O Programa Espacial Brasileiro - Dr. Rodrigo Leonardi (Agência Espacial Brasileira)',
@@ -141,17 +141,17 @@ export default {
 								{
 									titulo:'Android: Começando do Zero - Lucas Campos',
 									cor: corMinicurso,
-									local: 'B1-12'
+									local: 'B1-16'
 								},
 								{
 									titulo:'Contando histórias e Ensinando Matemática: Uma Introdução a Teoria dos Grafos - Prof° Cristiano Pereira',
 									cor: corMinicurso,
-									local: 'B1-5'
+									local: 'B1-6'
 								},
 								{
 									titulo:'EduBOT: Robótica para Educação - Arthur Braga Vidal',
 									cor: corMinicurso,
-									local: 'B1-11'
+									local: 'B1-17'
 								},
 								{
 									titulo:'Montagem e Controle de Lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
@@ -161,7 +161,7 @@ export default {
 								{
 									titulo:'Modelagem Matemática em Mecânica Usando Sotware Modellus - Prof. Tiago Castro',
 									cor: corMinicurso,
-									local: 'A1-7'
+									local: 'B1-14'
 								},
 								{
 									titulo:'Construção de Mini Planetário - Prof. Frederico Jordão, Pedro Emanuel, Lucas Aleixo e Ronilson Pires',
@@ -194,7 +194,7 @@ export default {
 								{
 									titulo:'MatLab: Fundamentos - Prof. Cristiano Pereira da Silva',
 									cor: corMinicurso,
-									local: 'B1-11'
+									local: 'B1-16'
 								},
 								{
 									titulo:'Montagem e Controle de Lego - Prof. Rodrigo Maia e Iran Carlos Ribeiro',
@@ -204,7 +204,7 @@ export default {
 								{
 									titulo:'Observação do Céu Com o Uso de Telescópios- Prof. Frederico Jordão',
 									cor: corMinicurso,
-									local: ''
+									local: 'Pátio'
 								}
 							]
 						}
@@ -226,7 +226,7 @@ export default {
 							titulo:'09:00 - 10:30',
 							eventos:[
 								{
-									titulo:'Formação docente: experiência e concepção sobre o ensino de Física e Computação - Prof.Cauê Zaghetto, Prof. Demetrius dos Santos Leão, Prof. Felipe Cabral, Prof.Maria de Fátima Ramos Brandão',
+									titulo:'Formação docente: experiência e concepção sobre o ensino de Física e Computação - Prof.Cauê Zaghetto, Prof. Demetrius dos Santos Leão, Prof. Felipe Cabral, Prof.Maria de Fátima Ramos Brandão, Prof. Eric Leão',
 									cor: corRodaConversa,
 									local: 'Auditorio'
 								}
@@ -236,7 +236,7 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Aspectos termodinâmicos da fotossíntese  - Prof. Dr. Luiz Roncaratti',
+									titulo:'Laboratório de Fotobioreatores: Estudo Teórico e Experimental dos Processos Respiratórios e Fotossintéticos de Microorganismos - Dr. Luiz Ribeiro',
 									cor: corPalestra,
 									local: 'Anfiteatro'
 								},
@@ -278,310 +278,202 @@ export default {
 							]
 						},
 						{
-							titulo:'',
-							cor: corPalestra,
-							local: 'Auditorio'
+							titulo:'15:00 - 16:00',
+							eventos:[
+								{
+									titulo:'Soluções de Rede Huawei para serviços mais ageis - Marcelo Naves',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'16:00 - 16:30',
+							eventos:[
+								{
+									titulo:'Intervalo',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'16:30 - 18:00',
+							eventos:[
+								{
+									titulo:'Apresentação de projetos',
+									cor: corProjetos,
+									local: 'Hall do Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
+						{
+							titulo:'19:00 - 19:40',
+							eventos:[
+								{
+									titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
+						{
+							titulo:'20:00 - 21:30',
+							eventos:[
+								{
+									titulo:'OAC na Robótica industria: Retrofitting do Robô ASEA - Prof. Me. Juan Sebastian Toquica',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
 						}
 					]
 				},
 				{
-					titulo:'14:00 - 16:00',
-					eventos:[
+					titulo:'14/06 - Quarta',
+					horarios:[
 						{
-							titulo:'Energia solar - Dr. Luciano Leal',
-							cor: corPalestra,
-							local: 'Anfiteatro'
-						}
-					]
-				},
-				{
-					titulo:'16:00 - 16:30',
-					eventos:[
+							titulo:'08:30 - 09:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
 						{
-							titulo:'Intervalo',
-							cor: corOutro
-						}
-					]
-				},
-				{
-					titulo:'16:30 - 18:00',
-					eventos:[
+							titulo:'09:00 - 10:00',
+							eventos:[
+								{
+									titulo:'Big Data - Marco Reis',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
 						{
-							titulo:'Apresentação de projetos',
-							cor: corProjetos,
-							local: 'Hall  do Auditorio'
-						}
-					]
-				},
-				{
-					titulo:'18:30 - 19:00',
-					eventos:[
+							titulo:'10:00 - 10:30',
+							eventos:[
+								{
+									titulo:'Brasil mais TI e o Inicío da Carreira - Priscila Ferreira',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
 						{
-							titulo:'Credenciamento',
-							cor: corOutro
-						}
-					]
-				},
-				{
-					titulo:'19:00 - 19:40',
-					eventos:[
+							titulo:'11:00 - 11:30',
+							eventos:[
+								{
+									titulo:'Estruturas de Dados Probabilisticas - Prof. Daniel Saad',
+									cor: corPalestra,
+									local: 'Auditorio'
+								}
+							]
+						},
 						{
-							titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
-							cor: corPalestra,
-							local: 'Auditorio'
-						}
-					]
-				},
-				{
-					titulo:'20:00 - 21:30',
-					eventos:[
+							titulo:'09:00 - 12:00',
+							eventos:[
+								{
+									titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
+									cor: corMinicurso,
+									local: 'BT-14'
+								}
+							]
+						},
 						{
-							titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
-							cor: corPalestra,
-							local: 'Auditorio'
-						}
-					]
-				}
-			]
-		},
-		{
-			titulo:'14/06 - Quarta',
-			horarios:[
-				{
-					titulo:'08:30 - 09:00',
-					eventos:[
+							titulo:'12:00 - 12:30',
+							eventos:[
+								{
+									titulo:'Plantação de Mudas',
+									cor: corMinicurso,
+									local: 'Em frente ao Lab de Mecânica'
+								}
+							]
+						},
 						{
-							titulo:'Credenciamento',
-							cor: corOutro
-						}
-					]
-				},
-				{
-					titulo:'09:00 - 10:00',
-					eventos:[
+							titulo:'12:30 - 14:00',
+							eventos:[
+								{
+									titulo:'Intervalo de Almoço',
+									cor: corOutro
+								}
+							]
+						},
 						{
-							titulo:' Big Data - Marco Reis',
-							cor: corPalestra,
-							local: 'Auditorio'
-						}
-					]
-				},
-				{
-					titulo:'10:30 - 11:30',
-					eventos:[
+							titulo:'14:00 - 17:30',
+							eventos:[
+								{
+									titulo:'Algoritme-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
+									cor: corMinicurso,
+									local: 'B1-16'
+								}
+							]
+						},
 						{
-							titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
-							cor: corPalestra,
-							local: 'Auditorio'
-						}
-					]
-				},
-				{
-					titulo:'09:00 - 11:30',
-					eventos:[
+							titulo:'18:30 - 19:00',
+							eventos:[
+								{
+									titulo:'Credenciamento',
+									cor: corOutro
+								}
+							]
+						},
 						{
-							titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
-							cor: corMinicurso,
-							local: 'BT-12'
-						}
-					]
-				},
-				{
-					titulo:'11:30 - 14:00',
-					eventos:[
+							titulo:'19:00 - 21:30',
+							eventos:[
+								{
+									titulo:'Fundamentos de Programação utilizando o Matlab - Prof° Cristiano Pereira',
+									cor: corPalestra,
+									local: 'B1-16'
+								}
+							]
+						},
 						{
-							titulo:'Intervalo de Almoço',
-							cor: corOutro
+							titulo:'21:30 - 22:00',
+							eventos:[
+								{
+									titulo:'Plantação de Mudas',
+									cor: corPalestra,
+									local: 'Em frente ao Lab de Mecânica'
+								}
+							]
 						}
-					]
-				},
-				{
-					titulo:'14:00 - 17:30',
-					eventos:[
-						{
-							titulo:'Algoritme-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
-							cor: corMinicurso,
-							local: ''
-						}
-					]
-				},
-				{
-					titulo:'18:30 - 19:00',
-					eventos:[
-						{
-							titulo:'Credenciamento',
-							cor: corOutro
-						}
-					]
-				},
-				{
-					titulo:'19:00 - 21:30',
-					eventos:[
-						{
-							titulo:'Matlab: programação - Prof° Cristiano Pereira',
-							cor: corPalestra,
-							local: ''
-						}
-					]
-				}
-			]
-		}
-	}
-}
-	</script>
 
-	titulo:'16:00 - 16:30',
-	eventos:[
-		{
-			titulo:'Intervalo',
-			cor: corOutro
-		}
-	]
-},
-{
-	titulo:'16:30 - 18:00',
-	eventos:[
-		{
-			titulo:'Apresentação de projetos',
-			cor: corProjetos,
-			local: 'Hall  do Auditorio'
-		}
-	]
-},
-{
-	titulo:'18:30 - 19:00',
-	eventos:[
-		{
-			titulo:'Credenciamento',
-			cor: corOutro
-		}
-	]
-},
-{
-	titulo:'19:00 - 19:40',
-	eventos:[
-		{
-			titulo:'IEEE - Lídia Ruanny e Prof. José Oniram ',
-			cor: corPalestra,
-			local: 'Auditorio'
-		}
-	]
-},
-{
-	titulo:'20:00 - 21:30',
-	eventos:[
-		{
-			titulo:'Retrofit de Robô Industrial - Prof. Me. Juan Sebastian Toquica',
-			cor: corPalestra,
-			local: 'Auditorio'
-		}
-	]
-}
-]
-},
-{
-	titulo:'14/06 - Quarta',
-	horarios:[
-		{
-			titulo:'08:30 - 09:00',
-			eventos:[
-				{
-					titulo:'Credenciamento',
-					cor: corOutro
+					]
 				}
-			]
-		},
-		{
-			titulo:'09:00 - 10:00',
-			eventos:[
+			],
+			legendas:[
 				{
-					titulo:' Big Data - Marco Reis',
-					cor: corPalestra,
-					local: 'Auditorio'
-				}
-			]
-		},
-		{
-			titulo:'10:30 - 11:30',
-			eventos:[
+					texto:'Palestras',
+					cor: corPalestra+'--text'
+				},
 				{
-					titulo:'Estruturas de Dados Sucintas - Prof. Daniel Saad',
-					cor: corPalestra,
-					local: 'Auditorio'
-				}
-			]
-		},
-		{
-			titulo:'09:00 - 11:30',
-			eventos:[
+					texto:'Minicursos',
+					cor: corMinicurso+'--text'
+				},
 				{
-					titulo:'Construção e Lançamento de Foguetes de propulsão a água - Prof. Eryc Leão ',
-					cor: corMinicurso,
-					local: 'BT-12'
-				}
-			]
-		},
-		{
-			titulo:'11:30 - 14:00',
-			eventos:[
+					texto:'Roda de conversa',
+					cor: corRodaConversa+'--text'
+				},
 				{
-					titulo:'Intervalo de Almoço',
-					cor: corOutro
-				}
-			]
-		},
-		{
-			titulo:'14:00 - 17:30',
-			eventos:[
+					texto:'Projetos',
+					cor: corProjetos+'--text'
+				},
 				{
-					titulo:'Algoritime-se: Oficina de Introdução a Algoritmos - Anderson Ferreira, Catarina Melo, Dermevaldo Dias, Raquel Passos',
-					cor: corMinicurso,
-					local: ''
-				}
-			]
-		},
-		{
-			titulo:'18:30 - 19:00',
-			eventos:[
-				{
-					titulo:'Credenciamento',
-					cor: corOutro
-				}
-			]
-		},
-		{
-			titulo:'19:00 - 21:30',
-			eventos:[
-				{
-					titulo:'Matlab: programação - Prof° Cristiano Pereira',
-					cor: corPalestra,
-					local: ''
+					texto:'Outros',
+					cor: corOutro+'--text'
 				}
 			]
 		}
-	]
-}
-],
-legendas: [
-	{
-		texto:'Palestras',
-		cor: corPalestra+'--text'
-	},
-	{
-		texto:'Minicursos',
-		cor: corMinicurso+'--text'
-	},
-	{
-		texto:'Roda de conversa',
-		cor: corRodaConversa+'--text'
-	},
-	{
-		texto:'Projetos',
-		cor: corProjetos+'--text'
-	},
-	{
-		texto:'Outros',
-		cor: corOutro+'--text'
 	}
-]
-}
+}
+</script>
