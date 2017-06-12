@@ -236,7 +236,7 @@ export default {
 							titulo:'10:30 - 11:30',
 							eventos:[
 								{
-									titulo:'Laboratório de Fotobioreatores: Estudo Teórico e Experimental dos Processos Respiratórios e Fotossintéticos de Microorganismos - Dr. Luiz Ribeiro',
+									titulo:'Aspectos termodinâmicos da fotossíntese - Dr. Luiz Fernando Roncaratti Junior',
 									cor: corPalestra,
 									local: 'Anfiteatro'
 								},
@@ -373,7 +373,7 @@ export default {
 							titulo:'11:00 - 11:30',
 							eventos:[
 								{
-									titulo:'Estruturas de Dados Probabilisticas - Prof. Daniel Saad',
+									titulo:'Estrutura de Dados sucinta - Prof. Daniel Saad',
 									cor: corPalestra,
 									local: 'Auditorio'
 								}
