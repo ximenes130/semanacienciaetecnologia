@@ -65,7 +65,7 @@
 						</v-list-tile-content>
 					</v-list-tile>
 				</v-list-item>
-				<v-list-item @click="scrollTo('#palestrantes')">
+				<!--v-list-item @click="scrollTo('#palestrantes')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
 							<v-icon>people</v-icon>
@@ -74,7 +74,7 @@
 							<v-list-tile-title>Palestrantes</v-list-tile-title>
 						</v-list-tile-content>
 					</v-list-tile>
-				</v-list-item>
+				</v-list-item-->
 				<v-list-item @click="scrollTo('#inscricao')">
 					<v-list-tile ripple>
 						<v-list-tile-avatar>
