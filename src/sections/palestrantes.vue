@@ -7,7 +7,7 @@
 		</v-card-row>
 		<v-container fluid>
 			<v-layout row justify-start wrap>
-				<v-flex xs12 sm6 md4 v-for="(palestrante, index) in palestrantes" :key="index">
+				<v-flex xs12 sm6 md4 v-for="(palestrante, index) in palestrantesF" :key="index">
 					<v-card hover @click="openUrl(palestrante.lattes)" class="ma-2">
 						<v-card-column class="pa-3">
 							<div class="title">{{palestrante.nome}}</div>
@@ -43,79 +43,79 @@ export default {
 				{
 					nome: 'Luiz Roncaratti',
 					local: 'UnB, Università degli Studi di Perugia',
-					area: 'Instituto de Física (UnB)',
+					area: 'Física, Química',
 					lattes:'http://lattes.cnpq.br/0859908961302295'
 				},
 				{
 					nome: 'Luciano Leal',
 					local: 'UnB',
-					area: 'Colégio Militar de Brasília',
+					area: 'Física',
 					lattes:'http://lattes.cnpq.br/0115599236292361'
 				},
 				{
 					nome: 'Rodrigo Leonardi',
 					local: 'University of California, INPE, UnB',
-					area: 'Agência Espacial Brasileira',
+					area: 'Matemática, Astrofísica',
 					lattes:'http://lattes.cnpq.br/4061600030396747'
 				},
 				{
 					nome: 'Gustavo Morais',
-					local: 'unicap, Uni. Estácio de Sá',
-					area: 'IBM',
+					local: 'Unicamp, Uni. Estácio de Sá',
+					area: 'Tecnologia da Informação',
 					lattes:'https://br.linkedin.com/in/gustavoamorais'
 				},
 				{
 					nome: 'Daniel Saad',
-					local: '',
-					area: '',
+					local: 'IFB',
+					area: 'Ciência da Computação',
 					lattes:'http://lattes.cnpq.br/1867062109453099'
 				},
 				{
 					nome: 'Felipe de Leal',
-					local: '',
-					area: '',
+					local: 'UnB',
+					area: 'Ciência Política, Ciências Sociais, Física',
 					lattes:'http://buscacv.cnpq.br/buscacv/#/espelho?nro_id_cnpq_cp_s=2524007926428412'
 				},
 				{
 					nome: 'Eryc Leão',
 					local: 'Coimbra, UnB, IFB',
-					area: 'Coordenador do curso de Fisica',
+					area: 'Física, Filosofia',
 					lattes:'http://lattes.cnpq.br/1421645250331076'
 				},
 				{
 					nome: 'Demetrius Leão',
-					local: '',
-					area: '',
+					local: 'UnB, UNISESC, UNIPLAN',
+					area: 'Física',
 					lattes:'http://buscacv.cnpq.br/buscacv/#/espelho?nro_id_cnpq_cp_s=7208834400103455'
 				},
 				{
 					nome: 'Maria de Fátima',
-					local: '',
-					area: '',
+					local: 'UnB, UFRJ, UCB',
+					area: 'Ciência da Computação; Psicologia Social, do Trabalho e das Organizações, Processamento de Dados',
 					lattes:'http://buscacv.cnpq.br/buscacv/#/espelho?nro_id_cnpq_cp_s=9660588093524652'
 				},
 				{
 					nome: 'Cauê Zaghetto',
-					local: '',
-					area: '',
+					local: 'FAETEC, UFRJ, UCB, UnB',
+					area: 'Física, Eletrotécnica, Engenharia Mecatrônica',
 					lattes:'http://buscacv.cnpq.br/buscacv/#/espelho?nro_id_cnpq_cp_s=9707057567892387'
 				},
 				{
 					nome: 'Frederico Jordão',
-					local: 'IFB - Taguatinga',
-					area: '',
+					local: 'IFB, UnB',
+					area: 'Física',
 					lattes:'http://lattes.cnpq.br/5504527581834900'
 				},
 				{
 					nome: 'Rodrigo Maia',
-					local: 'IFB - Taguatinga',
-					area: '',
+					local: 'IFB, UnB',
+					area: 'Física',
 					lattes:'http://lattes.cnpq.br/8188052983150930'
 				},
 				{
 					nome: 'Tiago Castro',
-					local: '',
-					area: '',
+					local: 'UnB',
+					area: 'Física',
 					lattes:'http://lattes.cnpq.br/4270397222551287'
 				}
 			]
@@ -123,12 +123,7 @@ export default {
 	},
 	computed: {
 		palestrantesF(){
-			return this.palestrantes.sort((a, b)=>a.descricao.length - b.descricao.length);
-		}
-	},
-	filters: {
-		reduzir(val){
-			return val.length > 400 ? val.substr(0, 399) + '...' : val;
+			return this.palestrantes.sort((a, b)=>a.area.length - b.area.length);
 		}
 	}
 }
